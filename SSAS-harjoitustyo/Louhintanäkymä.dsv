@@ -1,0 +1,284 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3fda386e-bd15-4899-9272-8030f44d7698" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Louhintanäkymä</ID>
+  <Name>Louhintanäkymä</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Tietovarastot DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Louhintanäkymä" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Louhintanäkymä" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="1ad46fc9-7ac3-484c-8529-c079ffa48af8">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Louhintataulu" msprop:design-time-name="d96958c5-9839-482b-af15-3830ab7ce805" msprop:DbTableName="Louhintataulu" msprop:FriendlyName="Louhintataulu" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="LouhintaKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="53eb1178-cd1b-4268-bdb5-e1fd9908aba0" msprop:DbColumnName="LouhintaKey" msprop:FriendlyName="LouhintaKey" type="xs:int" />
+                  <xs:element name="Pvm" msprop:design-time-name="1d207ad4-cd38-4597-9b13-f0b98bd39655" msprop:DbColumnName="Pvm" msprop:FriendlyName="Pvm" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Kuukaudennro" msprop:design-time-name="f64fab5c-ea67-470f-8c83-50205b9eae9f" msprop:DbColumnName="Kuukaudennro" msprop:FriendlyName="Kuukaudennro" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Kuukausi" msprop:design-time-name="c64f581d-37d9-4158-90d5-aec99f718601" msprop:DbColumnName="Kuukausi" msprop:FriendlyName="Kuukausi" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kuukaudenpv" msprop:design-time-name="a045f587-4ab4-45ce-a6a1-8272d1472fa3" msprop:DbColumnName="Kuukaudenpv" msprop:FriendlyName="Kuukaudenpv" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Viikonpaivanro" msprop:design-time-name="35977668-d289-4956-a27b-cf02ba46697f" msprop:DbColumnName="Viikonpaivanro" msprop:FriendlyName="Viikonpaivanro" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Viikonpaiva" msprop:design-time-name="1f711d63-caa8-4033-bfa3-536048ddc191" msprop:DbColumnName="Viikonpaiva" msprop:FriendlyName="Viikonpaiva" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kunta" msprop:design-time-name="ebb4f516-5875-454b-9780-bb504ab585cd" msprop:DbColumnName="Kunta" msprop:FriendlyName="Kunta" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tienpitäjä" msprop:design-time-name="76b3f687-b6a8-4f6d-95af-7b6d0df22bb0" msprop:DbColumnName="Tienpitäjä" msprop:FriendlyName="Tienpitäjä" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tie" msprop:design-time-name="e1f6b8ff-18e0-44d6-b929-18c4517f7949" msprop:DbColumnName="Tie" msprop:FriendlyName="Tie" type="xs:int" minOccurs="0" />
+                  <xs:element name="Onnettomuustyyppi" msprop:design-time-name="a9f17547-c432-4638-9312-79009724f998" msprop:DbColumnName="Onnettomuustyyppi" msprop:FriendlyName="Onnettomuustyyppi" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Onnettomuusluokka" msprop:design-time-name="4f0f729f-7e97-4b32-ae62-897273620973" msprop:DbColumnName="Onnettomuusluokka" msprop:FriendlyName="Onnettomuusluokka" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Nopeusrajoitus" msprop:design-time-name="eef2c2c9-67ec-4941-bdcf-db9e275bd555" msprop:DbColumnName="Nopeusrajoitus" msprop:FriendlyName="Nopeusrajoitus" type="xs:short" minOccurs="0" />
+                  <xs:element name="Onnettomuuspaikka" msprop:design-time-name="49a4f774-e07a-4ed0-892e-bac0b6d02acb" msprop:DbColumnName="Onnettomuuspaikka" msprop:FriendlyName="Onnettomuuspaikka" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Liikennevalot" msprop:design-time-name="99006854-9bf3-4bff-b976-eb220eb3e178" msprop:DbColumnName="Liikennevalot" msprop:FriendlyName="Liikennevalot" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Nopeusrajoituslaji" msprop:design-time-name="1fd55ee6-046b-44e1-a5ab-1fbccaa3b483" msprop:DbColumnName="Nopeusrajoituslaji" msprop:FriendlyName="Nopeusrajoituslaji" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Vastaantulevien_x0020_nopeusrajoitus" msprop:design-time-name="74fa498d-bd23-4819-be4f-43a7c696e127" msprop:DbColumnName="Vastaantulevien nopeusrajoitus" msprop:FriendlyName="Vastaantulevien nopeusrajoitus" type="xs:short" minOccurs="0" />
+                  <xs:element name="Taajama" msprop:design-time-name="e511f71e-bbda-4d8d-96dc-03f2e3a382b7" msprop:DbColumnName="Taajama" msprop:FriendlyName="Taajama" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Moottoritie" msprop:design-time-name="970b518e-c9e4-4950-b617-67e47bd92e98" msprop:DbColumnName="Moottoritie" msprop:FriendlyName="Moottoritie" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Toimiluokka" msprop:design-time-name="d3b59dbd-7ab1-4281-8305-529d5747b45a" msprop:DbColumnName="Toimiluokka" msprop:FriendlyName="Toimiluokka" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tienleveys" msprop:design-time-name="a4ffed05-63c1-40a2-8b49-2898a28cef89" msprop:DbColumnName="Tienleveys" msprop:FriendlyName="Tienleveys" type="xs:short" minOccurs="0" />
+                  <xs:element name="Tietyö" msprop:design-time-name="fe4e246e-7d4a-4e87-85a1-de86ce8dd58e" msprop:DbColumnName="Tietyö" msprop:FriendlyName="Tietyö" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Päällyste" msprop:design-time-name="58b0a3a3-0864-450e-a355-fd66f58712ba" msprop:DbColumnName="Päällyste" msprop:FriendlyName="Päällyste" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Risteys" msprop:design-time-name="44c8cffa-9239-4f58-b97c-21e40ae47414" msprop:DbColumnName="Risteys" msprop:FriendlyName="Risteys" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Rautatie" msprop:design-time-name="bb476b94-4c36-4c24-b1a5-17d272b51daa" msprop:DbColumnName="Rautatie" msprop:FriendlyName="Rautatie" type="xs:short" minOccurs="0" />
+                  <xs:element name="Rautatien_x0020_turvalaitteet" msprop:design-time-name="a096e5ca-720f-4c22-949c-7b7cc0edebe5" msprop:DbColumnName="Rautatien turvalaitteet" msprop:FriendlyName="Rautatien turvalaitteet" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Katuosoite" msprop:design-time-name="1010094a-3011-4291-a9de-932115f668c7" msprop:DbColumnName="Katuosoite" msprop:FriendlyName="Katuosoite" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tietyyppi" msprop:design-time-name="35e67281-b565-422e-b39e-38cb1bf1aa14" msprop:DbColumnName="Tietyyppi" msprop:FriendlyName="Tietyyppi" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Talvhoitoluokka" msprop:design-time-name="342bf65e-8d2e-47f0-9720-7f9df5718088" msprop:DbColumnName="Talvhoitoluokka" msprop:FriendlyName="Talvhoitoluokka" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tienverkse" msprop:design-time-name="e7dd87e6-8bfd-4021-be62-9de70c68d895" msprop:DbColumnName="Tienverkse" msprop:FriendlyName="Tienverkse" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kaistatyyppi" msprop:design-time-name="19ba5e5e-a246-4e14-9612-1d8cac933f29" msprop:DbColumnName="Kaistatyyppi" msprop:FriendlyName="Kaistatyyppi" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Solmutyyppi" msprop:design-time-name="bd129714-6d6d-4976-9729-21732dc9a968" msprop:DbColumnName="Solmutyyppi" msprop:FriendlyName="Solmutyyppi" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Päällysleveys" msprop:design-time-name="98ab5173-c892-4f32-b635-a96cf40a05f9" msprop:DbColumnName="Päällysleveys" msprop:FriendlyName="Päällysleveys" type="xs:short" minOccurs="0" />
+                  <xs:element name="Päällysteluokka" msprop:design-time-name="6c75576b-15d0-4dba-af72-20854e2466b0" msprop:DbColumnName="Päällysteluokka" msprop:FriendlyName="Päällysteluokka" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TimeStamp" msprop:design-time-name="b02d320d-a776-4d9e-802f-4f3ea0de0161" msprop:DbColumnName="TimeStamp" msprop:FriendlyName="TimeStamp" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Kuolleet" msprop:design-time-name="0e2f7389-b48c-48c6-98ff-c331de7fa304" msprop:DbColumnName="Kuolleet" msprop:FriendlyName="Kuolleet" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Loukkaant" msprop:design-time-name="46678d8f-a63f-4178-990c-00c06ea85f2c" msprop:DbColumnName="Loukkaant" msprop:FriendlyName="Loukkaant" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Vakavuus" msprop:design-time-name="febe8d36-860d-42bb-9b04-60ff6954c5d3" msprop:DbColumnName="Vakavuus" msprop:FriendlyName="Vakavuus" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Osallisten_x0020_lkm" msprop:design-time-name="ac80c1cb-ecc8-4d24-be53-fc26d157f098" msprop:DbColumnName="Osallisten lkm" msprop:FriendlyName="Osallisten lkm" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Onnett_id" msprop:design-time-name="384ca62c-20fe-41be-aa38-6ace44612605" msprop:DbColumnName="Onnett_id" msprop:FriendlyName="Onnett_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="PilvienMaara" msprop:design-time-name="72e71d05-f824-4e56-998d-458bb502bcb5" msprop:DbColumnName="PilvienMaara" msprop:FriendlyName="PilvienMaara" type="xs:short" minOccurs="0" />
+                  <xs:element name="Ilmanpaine" msprop:design-time-name="a64591b6-5fb6-4669-a4b7-ef840e9f1a0e" msprop:DbColumnName="Ilmanpaine" msprop:FriendlyName="Ilmanpaine" type="xs:float" minOccurs="0" />
+                  <xs:element name="SuhteellinenKosteus" msprop:design-time-name="6973b722-1c73-47c4-a2d8-6cac5a349486" msprop:DbColumnName="SuhteellinenKosteus" msprop:FriendlyName="SuhteellinenKosteus" type="xs:short" minOccurs="0" />
+                  <xs:element name="SateenIntensiteetti" msprop:design-time-name="f6f138e7-6220-4c95-a588-9bc3e0a74fe8" msprop:DbColumnName="SateenIntensiteetti" msprop:FriendlyName="SateenIntensiteetti" type="xs:float" minOccurs="0" />
+                  <xs:element name="Lumensyvyys" msprop:design-time-name="d630f580-c8c1-4108-82c7-7eb8cf41bad6" msprop:DbColumnName="Lumensyvyys" msprop:FriendlyName="Lumensyvyys" type="xs:short" minOccurs="0" />
+                  <xs:element name="IlmanLampotila" msprop:design-time-name="d3fab596-44e9-46af-90c9-e48c1b7ed32b" msprop:DbColumnName="IlmanLampotila" msprop:FriendlyName="IlmanLampotila" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Kastepistelampotila" msprop:design-time-name="3fd5e21f-4411-4223-a5f3-a69fd66bf435" msprop:DbColumnName="Kastepistelampotila" msprop:FriendlyName="Kastepistelampotila" type="xs:float" minOccurs="0" />
+                  <xs:element name="Nakyvyys" msprop:design-time-name="9e23735d-8d62-416c-a9ba-2b009ff45353" msprop:DbColumnName="Nakyvyys" msprop:FriendlyName="Nakyvyys" type="xs:int" minOccurs="0" />
+                  <xs:element name="TuulenSuunta" msprop:design-time-name="e51653b8-6924-467c-940f-55384374a758" msprop:DbColumnName="TuulenSuunta" msprop:FriendlyName="TuulenSuunta" type="xs:short" minOccurs="0" />
+                  <xs:element name="Puuskanopeus" msprop:design-time-name="750ad5bb-e25f-4307-8b52-58f718438d54" msprop:DbColumnName="Puuskanopeus" msprop:FriendlyName="Puuskanopeus" type="xs:float" minOccurs="0" />
+                  <xs:element name="TuulenNopeus" msprop:design-time-name="0cdd5ed2-4a9c-41bc-b8e4-48a75d05d74f" msprop:DbColumnName="TuulenNopeus" msprop:FriendlyName="TuulenNopeus" type="xs:float" minOccurs="0" />
+                  <xs:element name="Pintaselite" msprop:design-time-name="258cec56-54db-4327-af52-98592e7755ee" msprop:DbColumnName="Pintaselite" msprop:FriendlyName="Pintaselite" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Valoisuus" msprop:design-time-name="a63cc151-adda-42c8-b7a2-8dc132ede7c8" msprop:DbColumnName="Valoisuus" msprop:FriendlyName="Valoisuus" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Saaselite" msprop:design-time-name="fa1e876c-70aa-4898-bd26-279f208fea28" msprop:DbColumnName="Saaselite" msprop:FriendlyName="Saaselite" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Louhintataulu" />
+          <xs:field xpath="LouhintaKey" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <Louhintanäkymä xmlns="" />
+  </Schema>
+</DataSourceView>

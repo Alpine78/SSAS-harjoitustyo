@@ -1,0 +1,637 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="13b7f044-834a-4caa-bf27-a5adfaa1acb8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tietovarastot DW</ID>
+  <Name>Tietovarastot DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="13" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10169" scrolltop="-2641" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="34793" y="25532" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactOnnettomuus" left="5489" top="7400" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3096" height="8519" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c0000180c000047210000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_FactOnnettomuus" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimPvm" left="-6939" top="3166" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3069" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c0000fd0b00009b0f0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_DimPvm" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimSekalainen" left="5489" top="0" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3096" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c0000180c000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_DimSekalainen" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimKunta" left="13393" top="6817" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000a50a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_DimKunta" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimHenkilo" left="17691" top="12234" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="9444" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000e4240000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_DimHenkilo" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactWeather" left="-7145" top="13742" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3757" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c0000ad0e000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_FactWeather" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="-3688" top="13559" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="9477" height="883" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FactOnnettomuus-FactWeather]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="1" sourceattachpoint="15" destattachpoint="32" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="-3388" y="14042" />
+                    <point x="1050" y="14042" />
+                    <point x="1050" y="13859" />
+                    <point x="5489" y="13859" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="8285" top="7780" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="5408" height="2529" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FactOnnettomuus-DimKunta]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="14" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="13393" y="8179" />
+                    <point x="9785" y="8179" />
+                    <point x="9785" y="10009" />
+                    <point x="8585" y="10009" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="6638" top="4501" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FactOnnettomuus-DimSekalainen]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="7037" y="5000" />
+                    <point x="7037" y="7400" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="-4170" top="4764" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="9959" height="5545" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FactOnnettomuus-DimPvm]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="17" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="-3870" y="5163" />
+                    <point x="4289" y="5163" />
+                    <point x="4289" y="10009" />
+                    <point x="5489" y="10009" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="8285" top="14560" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="9706" height="1046" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[DimHenkilo-FactOnnettomuus]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="5" sourceattachpoint="37" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="8585" y="14959" />
+                    <point x="12926" y="14959" />
+                    <point x="12926" y="15306" />
+                    <point x="17691" y="15306" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="-3688" top="14010" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="9477" height="882" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FactWeather-FactOnnettomuus]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="6" sourceattachpoint="34" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="5489" y="14409" />
+                    <point x="1051" y="14409" />
+                    <point x="1051" y="14592" />
+                    <point x="-3388" y="14592" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-10169</DiagramViewPortLeft>
+            <DiagramViewPortTop>-2641</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Tietovarastot DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Tietovarastot_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Tietovarastot_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="cc0ff91a-b636-4bcb-b33f-5751afc044cd">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_FactOnnettomuus" msprop:design-time-name="4f8f449b-1825-4a22-b100-76c52c41a6ed" msprop:FriendlyName="FactOnnettomuus" msprop:DbSchemaName="dbo" msprop:DbTableName="FactOnnettomuus" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Onnett_id" msprop:design-time-name="1c5941d5-d15c-462a-8450-53887b3e60a0" msprop:DbColumnName="Onnett_id" msprop:FriendlyName="Onnett_id" type="xs:int" />
+                  <xs:element name="TimeStamp" msprop:design-time-name="f08b0906-0e57-4a23-b916-177dde0705f2" msprop:DbColumnName="TimeStamp" msprop:FriendlyName="TimeStamp" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Pvm" msprop:design-time-name="1b910863-ee31-4461-9b87-92f47afcadeb" msprop:DbColumnName="Pvm" msprop:FriendlyName="Pvm" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="WeatherKey" msprop:design-time-name="a9d0a1be-88e9-4302-87f9-d84f16edc586" msprop:DbColumnName="WeatherKey" msprop:FriendlyName="WeatherKey" type="xs:int" minOccurs="0" />
+                  <xs:element name="KuntaKey" msprop:design-time-name="a9f6329e-ad5c-4b5e-b030-1e320c298794" msprop:DbColumnName="KuntaKey" msprop:FriendlyName="KuntaKey" type="xs:short" minOccurs="0" />
+                  <xs:element name="SekalainenKey" msprop:design-time-name="a2cb9e90-9b7f-4577-85e6-0d9517a12c4d" msprop:DbColumnName="SekalainenKey" msprop:FriendlyName="SekalainenKey" type="xs:int" minOccurs="0" />
+                  <xs:element name="DateKey" msprop:design-time-name="4e0a5c57-a82b-4a43-b376-4db1acdfcc62" msprop:DbColumnName="DateKey" msprop:FriendlyName="DateKey" type="xs:int" minOccurs="0" />
+                  <xs:element name="Kuolleet" msprop:design-time-name="efa3c6e8-39cb-4394-bac2-b68b6b30aece" msprop:DbColumnName="Kuolleet" msprop:FriendlyName="Kuolleet" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Loukkaant" msprop:design-time-name="ea3feba8-85a3-469f-9fa2-af776a3d1d3e" msprop:DbColumnName="Loukkaant" msprop:FriendlyName="Loukkaant" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Vakavuus" msprop:design-time-name="64e346c2-0fa2-4815-92e8-3c412cad1e6c" msprop:DbColumnName="Vakavuus" msprop:FriendlyName="Vakavuus" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Osallkm" msprop:design-time-name="3191dc00-8f51-474f-a9ee-0d1d9832a939" msprop:DbColumnName="Osallkm" msprop:FriendlyName="Osallkm" type="xs:unsignedByte" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimPvm" msprop:design-time-name="1f763951-0cd4-4c6f-9575-2a2824f597a8" msprop:FriendlyName="DimPvm" msprop:DbSchemaName="dbo" msprop:DbTableName="DimPvm" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateKey" msprop:design-time-name="fddd73cd-6cb9-4592-9c5e-afae17a2be4a" msprop:DbColumnName="DateKey" msprop:FriendlyName="DateKey" type="xs:int" />
+                  <xs:element name="Pvm" msprop:design-time-name="9be29b68-76aa-4f9b-b51d-a07bddfe39fd" msprop:DbColumnName="Pvm" msprop:FriendlyName="Pvm" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Kuukaudennro" msprop:design-time-name="67b938aa-51e4-4f8f-a60b-7bec26f4d05c" msprop:DbColumnName="Kuukaudennro" msprop:FriendlyName="Kuukaudennro" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Kuukausi" msprop:design-time-name="aa06ef50-a82e-419c-afbc-24a2ef4baedc" msprop:DbColumnName="Kuukausi" msprop:FriendlyName="Kuukausi" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kuukaudenpv" msprop:design-time-name="ee18d40e-bb6a-4039-99a5-eedad4baeda3" msprop:DbColumnName="Kuukaudenpv" msprop:FriendlyName="Kuukaudenpv" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Viikonpaivanro" msprop:design-time-name="e34711a2-04de-4f11-a650-e8d53c399882" msprop:DbColumnName="Viikonpaivanro" msprop:FriendlyName="Viikonpaivanro" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Viikonpaiva" msprop:design-time-name="a340edec-6503-4293-b706-7f079f91d1b3" msprop:DbColumnName="Viikonpaiva" msprop:FriendlyName="Viikonpaiva" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimSekalainen" msprop:design-time-name="496c46fa-834b-44ad-81ea-1cc1408923d4" msprop:FriendlyName="DimSekalainen" msprop:DbSchemaName="dbo" msprop:DbTableName="DimSekalainen" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SekalainenKey" msprop:design-time-name="103bb25c-f15e-45c6-8b8a-d7d68f8d8f7a" msprop:DbColumnName="SekalainenKey" msprop:FriendlyName="SekalainenKey" type="xs:int" />
+                  <xs:element name="Tienpitsel" msprop:design-time-name="d2b97dfc-66e3-4a3a-99cb-6908e0e25173" msprop:DbColumnName="Tienpitsel" msprop:FriendlyName="Tienpitsel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tie" msprop:design-time-name="3732f82a-6441-40ca-aa2d-28aba7d2e5f9" msprop:DbColumnName="Tie" msprop:FriendlyName="Tie" type="xs:int" minOccurs="0" />
+                  <xs:element name="Piirinimi" msprop:design-time-name="ac22d97f-0714-4c8d-ad97-ec0f9cf3408a" msprop:DbColumnName="Piirinimi" msprop:FriendlyName="Piirinimi" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Ontyypsel" msprop:design-time-name="3799b487-6f41-442c-887e-1ae04c9d2973" msprop:DbColumnName="Ontyypsel" msprop:FriendlyName="Ontyypsel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Onlksel" msprop:design-time-name="74854fe1-59a9-4e6f-9922-fcbeebc2dfde" msprop:DbColumnName="Onlksel" msprop:FriendlyName="Onlksel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Nopraj" msprop:design-time-name="11e498e8-0422-4c7c-abfa-7af31f39700d" msprop:DbColumnName="Nopraj" msprop:FriendlyName="Nopraj" type="xs:short" minOccurs="0" />
+                  <xs:element name="Onnpaiksel" msprop:design-time-name="8bb3328a-82e7-4851-89df-32eb16076305" msprop:DbColumnName="Onnpaiksel" msprop:FriendlyName="Onnpaiksel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Liikvalsel" msprop:design-time-name="257881c6-3e1a-4e48-85a6-491a76cd046d" msprop:DbColumnName="Liikvalsel" msprop:FriendlyName="Liikvalsel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Noplajisel" msprop:design-time-name="1284f184-1e66-4387-b09c-c40577123b98" msprop:DbColumnName="Noplajisel" msprop:FriendlyName="Noplajisel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Nopsuunvas" msprop:design-time-name="67cf63c6-e736-45c5-9386-8f9d99d97c02" msprop:DbColumnName="Nopsuunvas" msprop:FriendlyName="Nopsuunvas" type="xs:short" minOccurs="0" />
+                  <xs:element name="Nopsuunoik" msprop:design-time-name="9a180090-e7a6-4aa7-ad60-1782270cd00d" msprop:DbColumnName="Nopsuunoik" msprop:FriendlyName="Nopsuunoik" type="xs:short" minOccurs="0" />
+                  <xs:element name="Taajama" msprop:design-time-name="473913e9-79cf-44b1-9666-55630be2b887" msprop:DbColumnName="Taajama" msprop:FriendlyName="Taajama" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Mo_molsel" msprop:design-time-name="85c05521-ebf5-4eb5-8a80-74f255c18204" msprop:DbColumnName="Mo_molsel" msprop:FriendlyName="Mo_molsel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Toimlksel" msprop:design-time-name="832c3a48-f765-4ddf-bcc0-274581ef4526" msprop:DbColumnName="Toimlksel" msprop:FriendlyName="Toimlksel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tienlev" msprop:design-time-name="5bcb3e0a-821f-400e-ad64-05274caed763" msprop:DbColumnName="Tienlev" msprop:FriendlyName="Tienlev" type="xs:short" minOccurs="0" />
+                  <xs:element name="Tietyö" msprop:design-time-name="fce89c26-b5c6-493e-8383-fb4f9724ce54" msprop:DbColumnName="Tietyö" msprop:FriendlyName="Tietyö" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Päällsel" msprop:design-time-name="68adc893-95c4-42bb-bb8e-b767ba42dae5" msprop:DbColumnName="Päällsel" msprop:FriendlyName="Päällsel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Risteyssel" msprop:design-time-name="42587102-564d-48a4-814b-e2643840fa94" msprop:DbColumnName="Risteyssel" msprop:FriendlyName="Risteyssel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Rautatie" msprop:design-time-name="9aadbbbd-393b-48f1-b113-0714ce57d293" msprop:DbColumnName="Rautatie" msprop:FriendlyName="Rautatie" type="xs:short" minOccurs="0" />
+                  <xs:element name="Rautatsel" msprop:design-time-name="6115250c-4004-4e16-9a24-cdb063c5b3fd" msprop:DbColumnName="Rautatsel" msprop:FriendlyName="Rautatsel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Katuosoite" msprop:design-time-name="a7b696db-bdd8-4f61-9b76-a6276630f11d" msprop:DbColumnName="Katuosoite" msprop:FriendlyName="Katuosoite" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tietyypsel" msprop:design-time-name="f87945c1-e755-4644-b6c9-509eeb26a9ca" msprop:DbColumnName="Tietyypsel" msprop:FriendlyName="Tietyypsel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Talvhoitsel" msprop:design-time-name="6c90aa40-8206-4cb0-9853-c19d63037c77" msprop:DbColumnName="Talvhoitsel" msprop:FriendlyName="Talvhoitsel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tienverkse" msprop:design-time-name="cdd3f6b3-f96f-453e-9698-670730a748bb" msprop:DbColumnName="Tienverkse" msprop:FriendlyName="Tienverkse" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Lisäkaisse" msprop:design-time-name="ba573681-06f7-446a-88f8-c6004dc36bfe" msprop:DbColumnName="Lisäkaisse" msprop:FriendlyName="Lisäkaisse" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Solmutyyps" msprop:design-time-name="e67ce124-8b20-4f5d-b4f8-6565c950900a" msprop:DbColumnName="Solmutyyps" msprop:FriendlyName="Solmutyyps" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Päällyslev" msprop:design-time-name="62fc7bb3-0e56-435f-9db6-a761eb9e7b3d" msprop:DbColumnName="Päällyslev" msprop:FriendlyName="Päällyslev" type="xs:short" minOccurs="0" />
+                  <xs:element name="Päällksel" msprop:design-time-name="2deadfe8-14e9-4b24-8cde-24201cab1174" msprop:DbColumnName="Päällksel" msprop:FriendlyName="Päällksel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Elynimi" msprop:design-time-name="6ce31c0f-8301-4450-8cf2-2c9835c3b431" msprop:DbColumnName="Elynimi" msprop:FriendlyName="Elynimi" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimKunta" msprop:design-time-name="b85771cf-4ced-4e56-a854-eed4c14a2ae1" msprop:FriendlyName="DimKunta" msprop:DbSchemaName="dbo" msprop:DbTableName="DimKunta" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KuntaKey" msprop:design-time-name="e447d1cd-0f56-4861-81b1-2391ed4d23e0" msprop:DbColumnName="KuntaKey" msprop:FriendlyName="KuntaKey" type="xs:short" />
+                  <xs:element name="Kuntasel" msprop:design-time-name="40e3509a-7515-4cf6-9d6d-f164b4cf68cb" msprop:DbColumnName="Kuntasel" msprop:FriendlyName="Kuntasel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Maakunta" msprop:design-time-name="102b9426-d9f3-48db-a04e-54cb4359f0bc" msprop:DbColumnName="Maakunta" msprop:FriendlyName="Maakunta" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Maakuntsel" msprop:design-time-name="f59f6ea5-1a1f-4633-9bd9-9b6754152666" msprop:DbColumnName="Maakuntsel" msprop:FriendlyName="Maakuntsel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimHenkilo" msprop:design-time-name="5a002b20-d74d-4d06-9f11-2f469927e0a7" msprop:FriendlyName="DimHenkilo" msprop:DbSchemaName="dbo" msprop:DbTableName="DimHenkilo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Henkilo_id" msprop:design-time-name="75b3d54d-3cb5-4d52-8244-81f94e74ea41" msprop:DbColumnName="Henkilo_id" msprop:FriendlyName="Henkilo_id" type="xs:int" />
+                  <xs:element name="Osall_id" msprop:design-time-name="01798784-9c74-40f0-af72-5277707cd036" msprop:DbColumnName="Osall_id" msprop:FriendlyName="Osall_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="Onnett_id" msprop:design-time-name="50cd31dd-0a43-4138-84a3-2f4f3299625b" msprop:DbColumnName="Onnett_id" msprop:FriendlyName="Onnett_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="Osnro" msprop:design-time-name="5f725c0c-51ba-4169-8ee0-4d303f1671d8" msprop:DbColumnName="Osnro" msprop:FriendlyName="Osnro" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kulj_matk" msprop:design-time-name="e2fd269a-2e14-4eb0-bb18-c26b18984828" msprop:DbColumnName="Kulj_matk" msprop:FriendlyName="Kulj_matk" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Ika" msprop:design-time-name="a48583cb-ba65-42b7-bd39-6b32a3383dd3" msprop:DbColumnName="Ika" msprop:FriendlyName="Ika" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Sukupuoli" msprop:design-time-name="f039be88-3b17-454a-a62e-de2be616fb52" msprop:DbColumnName="Sukupuoli" msprop:FriendlyName="Sukupuoli" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kortti" msprop:design-time-name="20823979-6541-4b92-b115-84174134f571" msprop:DbColumnName="Kortti" msprop:FriendlyName="Kortti" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Seuraus" msprop:design-time-name="8ada71c7-a757-4cd7-8ed0-7f19f4a960af" msprop:DbColumnName="Seuraus" msprop:FriendlyName="Seuraus" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Seuraussel" msprop:design-time-name="194ba8da-8f00-4412-ab16-89e757f9468b" msprop:DbColumnName="Seuraussel" msprop:FriendlyName="Seuraussel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kulj_kans" msprop:design-time-name="baf6eb68-014c-41fa-a57d-0f38ab2aa1df" msprop:DbColumnName="Kulj_kans" msprop:FriendlyName="Kulj_kans" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Ajokortlk" msprop:design-time-name="800e3d7d-e810-40af-b466-fb307be7d7fa" msprop:DbColumnName="Ajokortlk" msprop:FriendlyName="Ajokortlk" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Ajokortika" msprop:design-time-name="3e0066b0-70a9-4d98-a6c5-7378c148b240" msprop:DbColumnName="Ajokortika" msprop:FriendlyName="Ajokortika" type="xs:unsignedByte" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactWeather" msprop:design-time-name="b095daf8-cc4b-4535-8fbc-d744fb5414a8" msprop:FriendlyName="FactWeather" msprop:DbSchemaName="dbo" msprop:DbTableName="FactWeather" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="WeatherKey" msprop:design-time-name="6909395c-fc5f-46f6-ba27-a5447dab10d2" msprop:DbColumnName="WeatherKey" msprop:FriendlyName="WeatherKey" type="xs:int" />
+                  <xs:element name="TimeStamp" msprop:design-time-name="051f14c0-abfa-4d52-9be5-cd17eaba79bd" msprop:DbColumnName="TimeStamp" msprop:FriendlyName="TimeStamp" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Onnett_id" msprop:design-time-name="16812545-9d7c-4bde-9d9c-df2a4b670f16" msprop:DbColumnName="Onnett_id" msprop:FriendlyName="Onnett_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="Pvm" msprop:design-time-name="79ab3947-738f-49e2-9cb2-f01b98ff0021" msprop:DbColumnName="Pvm" msprop:FriendlyName="Pvm" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="PilvienMaara" msprop:design-time-name="3be42430-198b-4ed2-8dd7-aef578217aa9" msprop:DbColumnName="PilvienMaara" msprop:FriendlyName="PilvienMaara" type="xs:short" minOccurs="0" />
+                  <xs:element name="Ilmanpaine" msprop:design-time-name="739f7095-2257-4c76-9b9a-b66f380e1a10" msprop:DbColumnName="Ilmanpaine" msprop:FriendlyName="Ilmanpaine" type="xs:float" minOccurs="0" />
+                  <xs:element name="SuhteellinenKosteus" msprop:design-time-name="06184d71-4f6d-4714-b349-4f3ae9127965" msprop:DbColumnName="SuhteellinenKosteus" msprop:FriendlyName="SuhteellinenKosteus" type="xs:short" minOccurs="0" />
+                  <xs:element name="SateenIntensiteetti" msprop:design-time-name="880e6649-8f51-417c-8d41-d99fabe982c6" msprop:DbColumnName="SateenIntensiteetti" msprop:FriendlyName="SateenIntensiteetti" type="xs:float" minOccurs="0" />
+                  <xs:element name="Lumensyvyys" msprop:design-time-name="612185ec-28e3-4d4a-889e-6ed69b22ea06" msprop:DbColumnName="Lumensyvyys" msprop:FriendlyName="Lumensyvyys" type="xs:short" minOccurs="0" />
+                  <xs:element name="IlmanLampotila" msprop:design-time-name="c836b1ff-6596-4abb-a8a6-7609cab23a0d" msprop:DbColumnName="IlmanLampotila" msprop:FriendlyName="IlmanLampotila" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Kastepistelampotila" msprop:design-time-name="2fda8145-5b33-467a-923b-58f90a6dc993" msprop:DbColumnName="Kastepistelampotila" msprop:FriendlyName="Kastepistelampotila" type="xs:float" minOccurs="0" />
+                  <xs:element name="Nakyvyys" msprop:design-time-name="744e9335-6e11-4631-a668-effeb936c779" msprop:DbColumnName="Nakyvyys" msprop:FriendlyName="Nakyvyys" type="xs:int" minOccurs="0" />
+                  <xs:element name="TuulenSuunta" msprop:design-time-name="f7cdc795-91a7-49ef-b870-fabf57599a97" msprop:DbColumnName="TuulenSuunta" msprop:FriendlyName="TuulenSuunta" type="xs:short" minOccurs="0" />
+                  <xs:element name="Puuskanopeus" msprop:design-time-name="09026680-1d27-48b7-ba40-ed0dd8a17308" msprop:DbColumnName="Puuskanopeus" msprop:FriendlyName="Puuskanopeus" type="xs:float" minOccurs="0" />
+                  <xs:element name="TuulenNopeus" msprop:design-time-name="74881b14-d9c6-42cc-80aa-ca95bda40b55" msprop:DbColumnName="TuulenNopeus" msprop:FriendlyName="TuulenNopeus" type="xs:float" minOccurs="0" />
+                  <xs:element name="Pintasel" msprop:design-time-name="97be1f3e-84fb-4181-bfcd-a4048d04f314" msprop:DbColumnName="Pintasel" msprop:FriendlyName="Pintasel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Valsel" msprop:design-time-name="ca7f7aab-88e6-47d5-a29b-f26ad6bfe379" msprop:DbColumnName="Valsel" msprop:FriendlyName="Valsel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Saasel" msprop:design-time-name="d862b092-6a85-499d-8165-1b913b3bc987" msprop:DbColumnName="Saasel" msprop:FriendlyName="Saasel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactOnnettomuus" />
+          <xs:field xpath="Onnett_id" />
+        </xs:unique>
+        <xs:unique name="dbo_DimPvm_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimPvm" />
+          <xs:field xpath="DateKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimSekalainen_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimSekalainen" />
+          <xs:field xpath="SekalainenKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimKunta_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimKunta" />
+          <xs:field xpath="KuntaKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimHenkilo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimHenkilo" />
+          <xs:field xpath="Henkilo_id" />
+        </xs:unique>
+        <xs:unique name="dbo_FactWeather_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactWeather" />
+          <xs:field xpath="WeatherKey" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="FactOnnettomuus-FactWeather" msdata:parent="dbo_FactWeather" msdata:child="dbo_FactOnnettomuus" msdata:parentkey="WeatherKey" msdata:childkey="WeatherKey" />
+          <msdata:Relationship name="FactOnnettomuus-DimKunta" msdata:parent="dbo_DimKunta" msdata:child="dbo_FactOnnettomuus" msdata:parentkey="KuntaKey" msdata:childkey="KuntaKey" />
+          <msdata:Relationship name="FactOnnettomuus-DimSekalainen" msdata:parent="dbo_DimSekalainen" msdata:child="dbo_FactOnnettomuus" msdata:parentkey="SekalainenKey" msdata:childkey="SekalainenKey" />
+          <msdata:Relationship name="FactOnnettomuus-DimPvm" msdata:parent="dbo_DimPvm" msdata:child="dbo_FactOnnettomuus" msdata:parentkey="DateKey" msdata:childkey="DateKey" />
+          <msdata:Relationship name="DimHenkilo-FactOnnettomuus" msdata:parent="dbo_FactOnnettomuus" msdata:child="dbo_DimHenkilo" msdata:parentkey="Onnett_id" msdata:childkey="Onnett_id" />
+          <msdata:Relationship name="FactWeather-FactOnnettomuus" msdata:parent="dbo_FactOnnettomuus" msdata:child="dbo_FactWeather" msdata:parentkey="Onnett_id" msdata:childkey="Onnett_id" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Tietovarastot_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

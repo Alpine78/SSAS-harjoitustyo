@@ -1,0 +1,414 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8dbe68a2-9380-4c0a-b9f6-f257221940dd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Weather</ID>
+  <Name>Fact Weather</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4002" scrolltop="-9604" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11800" y="24209" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactWeather" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3757" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000ad0e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactWeather" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4002</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9604</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5ea8adf1-5ad6-45ab-ba49-3acf859d34a5">
+    <DataSourceViewID>Tietovarastot DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="34418991-62e6-441f-8b2d-1d76f7f7748b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="78eaf1ab-2f78-4d4f-98b1-5d9279dfc38f">
+      <ID>Weather Key</ID>
+      <Name>Weather Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2586819e-2a9d-4af2-b593-fcc0feb8be08">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d0e86a2-75d6-4e48-9e51-921950d3d574">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>WeatherKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d879bebc-b090-4bdc-8214-119d1ec694a0">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7ed27190-39c4-4d9c-984e-a435fd709fbf">
+          <TableID>dbo_FactWeather</TableID>
+          <ColumnID>TimeStamp</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="81813798-8b38-49eb-978f-56946d97bd9c">
+          <AttributeID>Onnett Id</AttributeID>
+          <Name>Onnett Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fa6dcc8c-8a49-4278-8897-810849bd7039">
+          <AttributeID>Pilvien Maara</AttributeID>
+          <Name>Pilvien Maara</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c8a724d9-dcff-4466-84e1-74f8fe6ce1b5">
+          <AttributeID>Ilmanpaine</AttributeID>
+          <Name>Ilmanpaine</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f6050831-90ce-4442-8b69-d9b37a9ae997">
+          <AttributeID>Suhteellinen Kosteus</AttributeID>
+          <Name>Suhteellinen Kosteus</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d90fd00a-8145-4b17-b0ab-03b3e775ccec">
+          <AttributeID>Sateen Intensiteetti</AttributeID>
+          <Name>Sateen Intensiteetti</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6a62039c-b501-435e-80af-a5ec17845c87">
+          <AttributeID>Lumensyvyys</AttributeID>
+          <Name>Lumensyvyys</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5685d94e-d065-4899-bc01-4868b15fe8b5">
+          <AttributeID>Ilman Lampotila</AttributeID>
+          <Name>Ilman Lampotila</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9cfab0bc-c6c5-4ebe-ab29-864d619c1324">
+          <AttributeID>Kastepistelampotila</AttributeID>
+          <Name>Kastepistelampotila</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6da9749d-137d-472c-87af-db66f770eeb4">
+          <AttributeID>Nakyvyys</AttributeID>
+          <Name>Nakyvyys</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b9385a18-8c9b-479f-b534-50a026f209b1">
+          <AttributeID>Tuulen Suunta</AttributeID>
+          <Name>Tuulen Suunta</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5256e4ac-47d9-430f-89b3-605d9ccbb651">
+          <AttributeID>Puuskanopeus</AttributeID>
+          <Name>Puuskanopeus</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ad82b624-ee02-4bb9-a368-eb0fb23ef7da">
+          <AttributeID>Tuulen Nopeus</AttributeID>
+          <Name>Tuulen Nopeus</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bc57c669-5678-4205-9e3a-1fd43c424d5a">
+          <AttributeID>Pintasel</AttributeID>
+          <Name>Pintasel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="471abcea-2373-4c3b-b640-e8954067260b">
+          <AttributeID>Valsel</AttributeID>
+          <Name>Valsel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2674f5a0-0ce1-4318-80af-8c7e625033f5">
+          <AttributeID>Saasel</AttributeID>
+          <Name>Saasel</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="644b34f3-1ff9-442f-b4b8-b7c78791dcdd">
+      <ID>Onnett Id</ID>
+      <Name>Onnett Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="56a8fd92-de3d-4b7d-b0ce-6b484cf44225">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b22e4aa-9c7d-468d-a4b0-f32604c8a4ca">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>Onnett_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b6c26504-ece8-44b7-858a-e5afc4790124">
+      <ID>Pilvien Maara</ID>
+      <Name>Pilvien Maara</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e38990e-1003-480f-93bc-3e2a7618897e">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="38306a4a-1788-4508-ab81-65b32a17998b">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>PilvienMaara</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="307e064d-cf26-4289-9b55-eef8caaab0e6">
+      <ID>Ilmanpaine</ID>
+      <Name>Ilmanpaine</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5f6202a3-40bf-4f42-8b8b-71b7eda3c07f">
+          <DataType>Single</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65d31d76-5f8b-497c-b13e-d809aae03c02">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>Ilmanpaine</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="106db9d4-f0f2-47ad-b0dc-d7c803ab8d1a">
+      <ID>Suhteellinen Kosteus</ID>
+      <Name>Suhteellinen Kosteus</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="815d4c4d-ec0d-4a6f-b00b-57246d02878d">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="81d25c29-11b6-4281-8184-d71bd1b24ae6">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>SuhteellinenKosteus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f0d66bf-3318-4811-9803-86dca006bbf5">
+      <ID>Sateen Intensiteetti</ID>
+      <Name>Sateen Intensiteetti</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="775fb648-2fff-4777-9c8e-58514e97443a">
+          <DataType>Single</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2a005edc-5b13-4967-8bc4-08c35c59899d">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>SateenIntensiteetti</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a5ddcf33-5b64-4754-8120-6af751a71b07">
+      <ID>Lumensyvyys</ID>
+      <Name>Lumensyvyys</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2ba2fa2f-233a-4c1b-bd87-f0719e7e8b01">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="15450a52-f84f-4bee-bc02-cf1f61c21f38">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>Lumensyvyys</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4e9e032d-82bd-46b1-a638-74126d63160b">
+      <ID>Ilman Lampotila</ID>
+      <Name>Ilman Lampotila</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bdb7b4f9-2d5b-4add-b26b-bfb5043f3e09">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c3c499d-311e-42a0-9a2c-da8ddc4a9e9a">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>IlmanLampotila</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1ad7bf50-a652-472d-983d-45d4e4c52f22">
+      <ID>Kastepistelampotila</ID>
+      <Name>Kastepistelampotila</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc7b5cfd-faf0-4d5e-8a83-529a6d31d969">
+          <DataType>Single</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d1e7f2b-8d56-4b48-b201-41636cf8f029">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>Kastepistelampotila</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6b6641f6-ddc9-42af-a47b-a76b030b8949">
+      <ID>Nakyvyys</ID>
+      <Name>Nakyvyys</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="08904571-a858-432f-b2b7-e1002602cc30">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="23efcf18-b002-4b43-8a3c-b172879befe8">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>Nakyvyys</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dc981023-dd8d-48ae-9059-b6b6f64d509d">
+      <ID>Tuulen Suunta</ID>
+      <Name>Tuulen Suunta</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc57f944-42e2-4224-8ab2-79477d7cce87">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1518103d-3d0d-441a-9c71-a721e65a7b39">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>TuulenSuunta</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="41fe31a3-a9db-41db-9893-c9b5a75b7c26">
+      <ID>Puuskanopeus</ID>
+      <Name>Puuskanopeus</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="05dfc34f-cb92-4200-9244-9fe373763178">
+          <DataType>Single</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11630cc1-04f1-4971-bcbd-de50ee2e4d17">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>Puuskanopeus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="065977f4-c838-4963-8ab1-84fd8f3c0c85">
+      <ID>Tuulen Nopeus</ID>
+      <Name>Tuulen Nopeus</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5761e07b-f0e5-4dd9-b053-d2c6b0883dc5">
+          <DataType>Single</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8903641-235c-4c80-b2df-5345aeb84a0a">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>TuulenNopeus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="69716513-6885-4c46-a31f-fdd027549962">
+      <ID>Pintasel</ID>
+      <Name>Pintasel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cc17f94d-20c7-4441-a186-62c3510d7e9e">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0582cdbe-c2ee-4680-b262-2b890d4dabda">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>Pintasel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="193f89e2-7b74-41a4-bf16-073f10e8423f">
+      <ID>Valsel</ID>
+      <Name>Valsel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2f533edb-f7cc-4077-b483-ca299fb4376a">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f24986f-b4d1-44d3-9458-9020839bb959">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>Valsel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6116b2fe-bd06-4777-ac54-40b4535bba9d">
+      <ID>Saasel</ID>
+      <Name>Saasel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3417d8c7-d30f-4df0-a1f2-1244b53ab768">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d3faf98d-2e64-4279-918e-f4a0c8f9eaa1">
+            <TableID>dbo_FactWeather</TableID>
+            <ColumnID>Saasel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

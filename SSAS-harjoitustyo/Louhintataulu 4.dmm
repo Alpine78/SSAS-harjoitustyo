@@ -1,0 +1,1257 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7abd9946-728d-4aa1-9bf5-9870f370300e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Louhintataulu 4</ID>
+  <Name>Louhintataulu 4</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Louhintataulu</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-14241" scrolltop="-9552" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="33629" y="24104" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Louhintataulu" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5106" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000f213000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Louhintataulu" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-14241</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9552</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="105a1c6c-4c81-4442-9c6a-45bf7828cba3">
+    <DataSourceViewID>Louhintanäkymä</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7095b5f0-c292-4da2-8da8-24807698b29f">
+      <ID>Ilman Lampotila</ID>
+      <Name>Ilman Lampotila</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2df5a3e3-cd86-4a6d-9c90-3e421d01238b">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c3d8ffe6-1ec8-4fe9-ada5-754806140d47">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>IlmanLampotila</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b1e75028-7a47-48d1-a043-b00de7769448">
+      <ID>Ilmanpaine</ID>
+      <Name>Ilmanpaine</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1f10575a-1357-4eaa-8a74-df8145d661e4">
+          <DataType>Single</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae5f5725-99e2-4745-95ba-00360aad03c8">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Ilmanpaine</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="33fa1e8a-8334-4856-a8ab-a50bf5bab6ff">
+      <ID>Kaistatyyppi</ID>
+      <Name>Kaistatyyppi</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="029144ce-81d9-484d-be92-3b4905361820">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad56c112-e285-4437-944f-b2f99129ca8b">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Kaistatyyppi</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a85df8c7-34cf-4f44-9066-214428eed7b4">
+      <ID>Kastepistelampotila</ID>
+      <Name>Kastepistelampotila</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bb59ca06-19f5-4b57-8420-0cfe188da8a8">
+          <DataType>Single</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="05256752-0d3e-43db-9525-dd1bee1efb5c">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Kastepistelampotila</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5d6e0c85-b938-44f3-9dd6-f9b095fd8170">
+      <ID>Kunta</ID>
+      <Name>Kunta</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="69a5205a-1b0f-4248-b53e-27bb11077efc">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a10d2d8-ab82-4c81-a74f-87f142bf21ec">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Kunta</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b70eeec0-e035-4e99-ae68-e09ddfe298f9">
+      <ID>Kuolleet</ID>
+      <Name>Kuolleet</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dacac72b-ad72-4b08-a888-72f8d42366b5">
+          <DataType>UnsignedTinyInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="72a4834a-79d9-41a3-acc9-d9124735c2fc">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Kuolleet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="033725d8-be93-4d80-b44a-de525e8cacee">
+      <ID>Kuukaudennro</ID>
+      <Name>Kuukaudennro</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b334f7ee-4312-4660-b43a-e6965ed9f609">
+          <DataType>UnsignedTinyInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="16d510fd-52f0-4493-9ac6-c6f7526bba7f">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Kuukaudennro</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f0a530bd-a866-40b8-8df2-c0e3f6abf7aa">
+      <ID>Kuukausi</ID>
+      <Name>Kuukausi</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4a8b9e61-671d-474c-835a-1f0d251f6230">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f9ec728-1e5a-4a84-96ab-b1379c238884">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Kuukausi</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d5151a4e-84a5-408d-b7b4-837a6dfe9c0d">
+      <ID>Louhinta Key</ID>
+      <Name>Louhinta Key</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6ef4b361-0275-472f-bb19-4fdf834a4bcb">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="17302b0e-a2c1-4324-9699-884ffab8842f">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>LouhintaKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="96441cbc-9af9-473a-96de-fbd2f5d125f1">
+      <ID>Loukkaant</ID>
+      <Name>Loukkaant</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2882b213-6508-4c4d-9455-021f4a00c4f5">
+          <DataType>UnsignedTinyInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4dd03bfb-643c-4d1c-bb08-fc6ce6c0bbaf">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Loukkaant</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="006d05d2-fe0c-475d-862d-0f011b38fee0">
+      <ID>Nopeusrajoitus</ID>
+      <Name>Nopeusrajoitus</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1d873b2b-bb60-4890-ad99-47fddfeac936">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="90f9b852-f148-4d15-b23d-32be11e8a602">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Nopeusrajoitus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8d641a23-3c2f-44e3-b268-c4e7a4e6d889">
+      <ID>Onnettomuusluokka</ID>
+      <Name>Onnettomuusluokka</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5aac607e-aa98-4b7c-b054-0f58605aaaaf">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="848a74d0-de7e-4a26-8b16-154f55b5aca8">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Onnettomuusluokka</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="73227422-ccfe-4cf1-ab74-a0d8d5f86788">
+      <ID>Onnettomuuspaikka</ID>
+      <Name>Onnettomuuspaikka</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="94321b57-8912-4848-9f19-a266fce3cda9">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bbb7ec10-40e5-42ed-aaeb-86a0cf323b68">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Onnettomuuspaikka</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1ea48417-3b9a-4d49-ad3b-2fca4cfb688b">
+      <ID>Onnettomuustyyppi</ID>
+      <Name>Onnettomuustyyppi</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="929e803f-1716-453a-9052-8a25ae9b5191">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4433300-f09c-45cb-bd9b-3c49f8b5b75b">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Onnettomuustyyppi</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="26e56c09-6592-48e3-860b-c3af171ab977">
+      <ID>Osallisten Lkm</ID>
+      <Name>Osallisten Lkm</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="40ead1e3-fbb8-4c52-b735-159db7494357">
+          <DataType>UnsignedTinyInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="14a9f801-1bb4-4d87-a315-dfa346454c9a">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Osallisten_x0020_lkm</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c50505bf-b563-45ab-930b-52e9b385cf6b">
+      <ID>Päällyste</ID>
+      <Name>Päällyste</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="746b873b-af6b-49f4-8e6c-f9953bb3d971">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="96eb4096-bd51-4e6a-9087-cc8b46f3ffc1">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Päällyste</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="adebd614-f0dd-443f-8609-4b3220394f4b">
+      <ID>Päällysteluokka</ID>
+      <Name>Päällysteluokka</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9517834-89c2-44eb-ac37-db4786fe9b53">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="91cc6c80-2875-4d88-bb69-3f9194badd27">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Päällysteluokka</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="86671171-fe8d-4fac-9fc1-2dec4d596bb4">
+      <ID>Sateen Intensiteetti</ID>
+      <Name>Sateen Intensiteetti</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4f1bee15-1345-4e3b-8e25-8a109cfc905c">
+          <DataType>Single</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2739ea89-d986-4410-b790-55532a84ecca">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>SateenIntensiteetti</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5b8b3e28-b305-471f-8829-d63a75134927">
+      <ID>Solmutyyppi</ID>
+      <Name>Solmutyyppi</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a5ffe564-fa7b-4ab8-935f-7914aec217dd">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2430d3d1-8da9-4a79-9485-d951f91eddc2">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Solmutyyppi</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="be6e4338-7a12-4070-92a3-507c528b0270">
+      <ID>Suhteellinen Kosteus</ID>
+      <Name>Suhteellinen Kosteus</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="451802ad-0815-45aa-acc6-2140d7371b11">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1ce3bca-2701-4186-ab9d-f9911b1c2124">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>SuhteellinenKosteus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="39e7132b-f5dc-41de-9965-48b5e1e2d708">
+      <ID>Taajama</ID>
+      <Name>Taajama</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="64dc4287-7bbd-45bf-a844-a3cde2a80622">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3058d297-3b54-43f2-8e6f-d1709650ac26">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Taajama</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="046f40b1-7cf7-4b15-b590-921eecb90a7e">
+      <ID>Talvhoitoluokka</ID>
+      <Name>Talvhoitoluokka</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e108de6-a4cf-4f0a-aa65-02b01df5e35c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ffa16827-30c5-43b4-ad39-f8d465771fec">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Talvhoitoluokka</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f324a96c-7d0d-417d-a1d9-9ed86291a861">
+      <ID>Tie</ID>
+      <Name>Tie</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="efad4333-7a9f-4034-8af7-df1bedd3a1cb">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79b151e5-cbb8-4667-bded-c49ed4c0e3d2">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Tie</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="15037696-69f7-441f-aa5c-a16a8e7fe00f">
+      <ID>Tienleveys</ID>
+      <Name>Tienleveys</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7cb8ee6-a52d-403a-b76e-aeac669ba251">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1544ba26-72e0-4d75-b390-a8a385f1412f">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Tienleveys</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1aed7b05-ad0f-44cf-907e-112d678d2eab">
+      <ID>Tienpitäjä</ID>
+      <Name>Tienpitäjä</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5078020-3186-4a39-9922-3e19b7bd22e2">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="75e57551-3c1d-4af3-af97-2419d4b846f3">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Tienpitäjä</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="eef84233-3ba0-4065-bdd9-bbda0eda538d">
+      <ID>Tienverkse</ID>
+      <Name>Tienverkse</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1829e696-987c-4499-92f1-d18384ed0ea8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="019f80fc-be2b-4239-ade5-a222339dce36">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Tienverkse</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a2cbd441-f67b-4b69-b310-40606fd69e03">
+      <ID>Tietyyppi</ID>
+      <Name>Tietyyppi</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b2df0fef-1797-4635-aa97-35d5b35c41da">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c0ddd65a-9872-4eef-b924-0b37ba068a4a">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Tietyyppi</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="80888864-1b96-4d0b-ba78-7b0269698b27">
+      <ID>Tietyö</ID>
+      <Name>Tietyö</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="59cb3178-d0c9-4ffd-808a-0618f2e0bf1e">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a7bee854-4da9-43cc-9516-a8ea105957a9">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Tietyö</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6afc607d-5c76-45c7-99dc-ae1fbf251fb6">
+      <ID>Time Stamp</ID>
+      <Name>Time Stamp</Name>
+      <Type>Date</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b3f8a83-d395-4a2f-9cbd-36383f1544c6">
+          <DataType>Date</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="17fa77b6-13fa-45ce-9029-e8929e3ff462">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>TimeStamp</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="aa8c5e0d-828c-4767-889d-b7959371a864">
+      <ID>Tuulen Nopeus</ID>
+      <Name>Tuulen Nopeus</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4e688288-0a97-46c3-a48e-755591633178">
+          <DataType>Single</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2bfa47d4-cd3d-4a2a-81bd-29f3117f58ac">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>TuulenNopeus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5b3b83d3-e603-4789-8723-1fbbfa11eb65">
+      <ID>Vakavuus</ID>
+      <Name>Vakavuus</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="68c72e09-ec05-481e-9712-270ef5f6f96d">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="76aa0d18-1fda-46f9-ada9-8ccf6fc2c1dd">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Vakavuus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fc61234d-2ef1-48da-b764-026e61faac70">
+      <ID>Valoisuus</ID>
+      <Name>Valoisuus</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="848ce5b4-802e-4062-aae1-eba88107560f">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a183ccf9-cbd2-4c53-a03a-9ad1f8dc5144">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Valoisuus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="cba06774-9eca-4f80-892d-e279f36b1f11">
+      <ID>Vastaantulevien Nopeusrajoitus</ID>
+      <Name>Vastaantulevien Nopeusrajoitus</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4ee6dda0-35c2-452d-b246-17d237e87f63">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="453665d9-1d83-4c35-bc30-01ab30ce4292">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Vastaantulevien_x0020_nopeusrajoitus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fccfed19-0a19-45f2-b752-b5a864b5dfe8">
+      <ID>Viikonpaiva</ID>
+      <Name>Viikonpaiva</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="daeddb83-4e7f-49fc-9eab-9acd80ce2e9a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f5483df-cc2e-481f-9073-ee5484c60336">
+            <TableID>dbo_Louhintataulu</TableID>
+            <ColumnID>Viikonpaiva</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="e0dd82da-2d08-44ed-ad88-f4607c8de609">
+      <ID>Louhintataulu 4</ID>
+      <Name>Louhintataulu 4</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="48519ce7-a8ba-4478-aa73-2f7b8ab5b850">
+          <ID>Ilman Lampotila</ID>
+          <Name>Ilman Lampotila</Name>
+          <SourceColumnID>Ilman Lampotila</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="9cd4981f-c2c7-46f0-ba99-f8efb7e4fd56">
+          <ID>Ilmanpaine</ID>
+          <Name>Ilmanpaine</Name>
+          <SourceColumnID>Ilmanpaine</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="23ee68c4-da9c-4358-8c0e-1358a23c9c64">
+          <ID>Kaistatyyppi</ID>
+          <Name>Kaistatyyppi</Name>
+          <SourceColumnID>Kaistatyyppi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1f8f06ea-d9a1-4d3a-9e51-67438258a02c">
+          <ID>Kastepistelampotila</ID>
+          <Name>Kastepistelampotila</Name>
+          <SourceColumnID>Kastepistelampotila</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="21d95659-48ff-4f2d-a670-5f0958a42c3a">
+          <ID>Kunta</ID>
+          <Name>Kunta</Name>
+          <SourceColumnID>Kunta</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1ad0aaec-06a9-469f-bc72-ad9fef28e273">
+          <ID>Kuolleet</ID>
+          <Name>Kuolleet</Name>
+          <SourceColumnID>Kuolleet</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="ce5c43fe-0637-43f6-a6a6-37cb45e657a2">
+          <ID>Kuukaudennro</ID>
+          <Name>Kuukaudennro</Name>
+          <SourceColumnID>Kuukaudennro</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="3851961a-d7b6-4173-a511-9d30fea57b99">
+          <ID>Kuukausi</ID>
+          <Name>Kuukausi</Name>
+          <SourceColumnID>Kuukausi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9fdc804b-c582-46e7-8383-c45c20b08033">
+          <ID>Louhinta Key</ID>
+          <Name>Louhinta Key</Name>
+          <SourceColumnID>Louhinta Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="a33c9448-a06f-49c8-a82e-13f7ede1a2e9">
+          <ID>Loukkaant</ID>
+          <Name>Loukkaant</Name>
+          <SourceColumnID>Loukkaant</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="c079026a-295f-4ace-9c31-60a8c7a9cc42">
+          <ID>Nopeusrajoitus</ID>
+          <Name>Nopeusrajoitus</Name>
+          <SourceColumnID>Nopeusrajoitus</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="e138cebe-1f30-4808-9d77-d6a256d21e61">
+          <ID>Onnettomuusluokka</ID>
+          <Name>Onnettomuusluokka</Name>
+          <SourceColumnID>Onnettomuusluokka</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="38fb4007-54a0-4a7f-8dfc-74a504c9b2dd">
+          <ID>Päällyste</ID>
+          <Name>Päällyste</Name>
+          <SourceColumnID>Päällyste</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="639649d8-9efe-4c0b-86ae-5f4e77497a25">
+          <ID>Päällysteluokka</ID>
+          <Name>Päällysteluokka</Name>
+          <SourceColumnID>Päällysteluokka</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1de9eda1-3194-4879-accf-d0311647f560">
+          <ID>Sateen Intensiteetti</ID>
+          <Name>Sateen Intensiteetti</Name>
+          <SourceColumnID>Sateen Intensiteetti</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="9ce5a0d7-3185-4886-a9ff-847b5e2a4403">
+          <ID>Suhteellinen Kosteus</ID>
+          <Name>Suhteellinen Kosteus</Name>
+          <SourceColumnID>Suhteellinen Kosteus</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="092243b7-292d-4cc2-9d0e-be2092d5c3aa">
+          <ID>Taajama</ID>
+          <Name>Taajama</Name>
+          <SourceColumnID>Taajama</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b08883c3-72e5-4cf3-bb8a-345eca619692">
+          <ID>Time Stamp</ID>
+          <Name>Time Stamp</Name>
+          <SourceColumnID>Time Stamp</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="d834ada3-f797-4a02-9bc2-1716bcc614be">
+          <ID>Valoisuus</ID>
+          <Name>Valoisuus</Name>
+          <SourceColumnID>Valoisuus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="30d44a5d-d109-4ba2-bb9d-a687ed3c4a57">
+          <ID>Vastaantulevien Nopeusrajoitus</ID>
+          <Name>Vastaantulevien Nopeusrajoitus</Name>
+          <SourceColumnID>Vastaantulevien Nopeusrajoitus</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="54e65660-891f-4673-9834-6ed78a963f62">
+          <ID>Viikonpaiva</ID>
+          <Name>Viikonpaiva</Name>
+          <SourceColumnID>Viikonpaiva</SourceColumnID>
+        </Column>
+      </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="0d817229-2ef6-4cd6-ba03-7e7aeb625350">
+      <ID>Association Rules</ID>
+      <Name>Association Rules</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="2d63508d-cd9b-456a-80b6-ed834650d778">
+          <ID>Kaistatyyppi</ID>
+          <Name>Kaistatyyppi</Name>
+          <SourceColumnID>Kaistatyyppi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="446d1b89-508d-434c-88a6-c816244caa6d">
+          <ID>Kunta</ID>
+          <Name>Kunta</Name>
+          <SourceColumnID>Kunta</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ef72b101-174c-4b59-b23b-71acfe00ed1c">
+          <ID>Kuukausi</ID>
+          <Name>Kuukausi</Name>
+          <SourceColumnID>Kuukausi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5070560c-d198-40e5-9894-41b39ac48ea6">
+          <ID>Louhinta Key</ID>
+          <Name>Louhinta Key</Name>
+          <SourceColumnID>Louhinta Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="046f6838-efd0-4686-81fd-fcc465805e58">
+          <ID>Onnettomuusluokka</ID>
+          <Name>Onnettomuusluokka</Name>
+          <SourceColumnID>Onnettomuusluokka</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="93e90276-ce21-47dc-83d6-e03782e79cb3">
+          <ID>Päällyste</ID>
+          <Name>Päällyste</Name>
+          <SourceColumnID>Päällyste</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="fe69bebc-bd23-441c-ab1d-1af1b6983fdf">
+          <ID>Päällysteluokka</ID>
+          <Name>Päällysteluokka</Name>
+          <SourceColumnID>Päällysteluokka</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="cbabfbdf-f9f5-4f62-b2c6-13cfd883d809">
+          <ID>Taajama</ID>
+          <Name>Taajama</Name>
+          <SourceColumnID>Taajama</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="74319b1f-f39a-4dc4-86b7-374862a6202e">
+          <ID>Valoisuus</ID>
+          <Name>Valoisuus</Name>
+          <SourceColumnID>Valoisuus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="414c59c2-22b1-437c-8b62-05784f56bd07">
+          <ID>Viikonpaiva</ID>
+          <Name>Viikonpaiva</Name>
+          <SourceColumnID>Viikonpaiva</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="3e153aa7-689f-4d8b-ba8c-449045736e29">
+      <ID>Clustering3</ID>
+      <Name>Clustering3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="120832b8-7dae-4b03-a6c0-4b18e9f1f25e">
+          <ID>Ilman Lampotila</ID>
+          <Name>Ilman Lampotila</Name>
+          <SourceColumnID>Ilman Lampotila</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a85951dd-ce0e-479a-a3ec-bd9460088e7c">
+          <ID>Ilmanpaine</ID>
+          <Name>Ilmanpaine</Name>
+          <SourceColumnID>Ilmanpaine</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5c2d3d56-fa59-4ab2-a475-48505263d5e6">
+          <ID>Kaistatyyppi</ID>
+          <Name>Kaistatyyppi</Name>
+          <SourceColumnID>Kaistatyyppi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c69a9211-266c-499b-a7bb-f3f136705529">
+          <ID>Kastepistelampotila</ID>
+          <Name>Kastepistelampotila</Name>
+          <SourceColumnID>Kastepistelampotila</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0baa0501-e6c3-4ac5-bb6f-1f432ffea761">
+          <ID>Kunta</ID>
+          <Name>Kunta</Name>
+          <SourceColumnID>Kunta</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6457639b-402c-4873-b8db-79169e2c51b1">
+          <ID>Kuolleet</ID>
+          <Name>Kuolleet</Name>
+          <SourceColumnID>Kuolleet</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="34f348ec-f04d-44d9-8717-d28a65a1d2ef">
+          <ID>Kuukaudennro</ID>
+          <Name>Kuukaudennro</Name>
+          <SourceColumnID>Kuukaudennro</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d5b1b0c2-3028-4c1f-9bfd-1b3230225855">
+          <ID>Kuukausi</ID>
+          <Name>Kuukausi</Name>
+          <SourceColumnID>Kuukausi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b14ec2cc-57ba-4437-858f-81d6d7df625b">
+          <ID>Louhinta Key</ID>
+          <Name>Louhinta Key</Name>
+          <SourceColumnID>Louhinta Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="379f03ed-be2c-4246-bdbd-0247f88486f0">
+          <ID>Loukkaant</ID>
+          <Name>Loukkaant</Name>
+          <SourceColumnID>Loukkaant</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="5cd80855-d88b-4cf1-85d8-6f54b4da4e2d">
+          <ID>Nopeusrajoitus</ID>
+          <Name>Nopeusrajoitus</Name>
+          <SourceColumnID>Nopeusrajoitus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="adbc7b23-e9a5-40af-be19-c4d26e9fe61c">
+          <ID>Onnettomuusluokka</ID>
+          <Name>Onnettomuusluokka</Name>
+          <SourceColumnID>Onnettomuusluokka</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="da829e16-ef08-447f-9b71-e80a64daa70f">
+          <ID>Päällyste</ID>
+          <Name>Päällyste</Name>
+          <SourceColumnID>Päällyste</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b35bfdbe-511c-4d27-9c07-a94b3bc97f78">
+          <ID>Päällysteluokka</ID>
+          <Name>Päällysteluokka</Name>
+          <SourceColumnID>Päällysteluokka</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9eb44a6e-dfa3-4069-89f3-83a23d9c9b02">
+          <ID>Sateen Intensiteetti</ID>
+          <Name>Sateen Intensiteetti</Name>
+          <SourceColumnID>Sateen Intensiteetti</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7fe751ff-63bf-4160-b8ba-b641929224aa">
+          <ID>Suhteellinen Kosteus</ID>
+          <Name>Suhteellinen Kosteus</Name>
+          <SourceColumnID>Suhteellinen Kosteus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5e9216da-4ebf-4425-9cc4-4eb176a180b5">
+          <ID>Taajama</ID>
+          <Name>Taajama</Name>
+          <SourceColumnID>Taajama</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="168849b4-b8c2-42fc-8fe2-ffbd09707f0d">
+          <ID>Time Stamp</ID>
+          <Name>Time Stamp</Name>
+          <SourceColumnID>Time Stamp</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0c8ce2ce-816f-4752-bf09-bdff02b1f1f2">
+          <ID>Valoisuus</ID>
+          <Name>Valoisuus</Name>
+          <SourceColumnID>Valoisuus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="39b0ef56-717c-40b6-818b-342d85112eb9">
+          <ID>Vastaantulevien Nopeusrajoitus</ID>
+          <Name>Vastaantulevien Nopeusrajoitus</Name>
+          <SourceColumnID>Vastaantulevien Nopeusrajoitus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9c52cf34-80c0-4bc1-8cd5-e9b302b4dd5b">
+          <ID>Viikonpaiva</ID>
+          <Name>Viikonpaiva</Name>
+          <SourceColumnID>Viikonpaiva</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="16d36f5f-6882-47ea-b0d9-726effe47cd8">
+      <ID>Linear Regression</ID>
+      <Name>Linear Regression</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Linear_Regression</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="bb0b9d49-8af3-44a7-be4d-43d1f9af72a8">
+          <ID>Ilman Lampotila</ID>
+          <Name>Ilman Lampotila</Name>
+          <SourceColumnID>Ilman Lampotila</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="cb9d9eb1-1706-4c30-8759-d6bbe815542e">
+          <ID>Ilmanpaine</ID>
+          <Name>Ilmanpaine</Name>
+          <SourceColumnID>Ilmanpaine</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="0a03af9c-f95e-42f6-bdea-1f6d9df68fa8">
+          <ID>Kastepistelampotila</ID>
+          <Name>Kastepistelampotila</Name>
+          <SourceColumnID>Kastepistelampotila</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="0e106c9d-79d4-410d-9c47-d3ec0190e261">
+          <ID>Kuolleet</ID>
+          <Name>Kuolleet</Name>
+          <SourceColumnID>Kuolleet</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="b6f65a6b-fe26-4b45-b077-cdc9f074e29e">
+          <ID>Kuukaudennro</ID>
+          <Name>Kuukaudennro</Name>
+          <SourceColumnID>Kuukaudennro</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="2112e116-23c0-4125-8bb5-bac1b43efda8">
+          <ID>Louhinta Key</ID>
+          <Name>Louhinta Key</Name>
+          <SourceColumnID>Louhinta Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="b3570602-b7d1-4448-9cde-56b5993cc219">
+          <ID>Loukkaant</ID>
+          <Name>Loukkaant</Name>
+          <SourceColumnID>Loukkaant</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="dda76d56-cf69-425f-a080-d53984ee7fa6">
+          <ID>Nopeusrajoitus</ID>
+          <Name>Nopeusrajoitus</Name>
+          <SourceColumnID>Nopeusrajoitus</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="bc2f9fb4-5cda-4868-8be8-4455e0fd0db0">
+          <ID>Sateen Intensiteetti</ID>
+          <Name>Sateen Intensiteetti</Name>
+          <SourceColumnID>Sateen Intensiteetti</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="1781571e-a87f-4b42-91ce-fcb05f495211">
+          <ID>Suhteellinen Kosteus</ID>
+          <Name>Suhteellinen Kosteus</Name>
+          <SourceColumnID>Suhteellinen Kosteus</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="a4880b46-28ed-486e-abb0-e056ff72d31f">
+          <ID>Time Stamp</ID>
+          <Name>Time Stamp</Name>
+          <SourceColumnID>Time Stamp</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="b9bdabf0-305b-47b0-8d6b-b4e946fd0b43">
+          <ID>Vastaantulevien Nopeusrajoitus</ID>
+          <Name>Vastaantulevien Nopeusrajoitus</Name>
+          <SourceColumnID>Vastaantulevien Nopeusrajoitus</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="721fa631-c135-43ed-ad57-be77b9d55c27">
+      <ID>Logistic Regression</ID>
+      <Name>Logistic Regression</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Logistic_Regression</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="e48465a4-c7b0-4737-b770-ff4a700de185">
+          <ID>Ilman Lampotila</ID>
+          <Name>Ilman Lampotila</Name>
+          <SourceColumnID>Ilman Lampotila</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2e333501-407f-4eac-be42-1aee3abfed51">
+          <ID>Ilmanpaine</ID>
+          <Name>Ilmanpaine</Name>
+          <SourceColumnID>Ilmanpaine</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="21c6be95-6068-4bc9-9ab9-5ba28d4b76f4">
+          <ID>Kaistatyyppi</ID>
+          <Name>Kaistatyyppi</Name>
+          <SourceColumnID>Kaistatyyppi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d40837cd-7273-4df7-bab6-6e90f37404e0">
+          <ID>Kastepistelampotila</ID>
+          <Name>Kastepistelampotila</Name>
+          <SourceColumnID>Kastepistelampotila</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="359106b2-c773-4bff-ae84-ab13e3193008">
+          <ID>Kunta</ID>
+          <Name>Kunta</Name>
+          <SourceColumnID>Kunta</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7cbc0cd0-1543-4705-b50a-d966fe35ea4b">
+          <ID>Kuolleet</ID>
+          <Name>Kuolleet</Name>
+          <SourceColumnID>Kuolleet</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="a30a3298-b523-4255-a95b-2ecdb53638eb">
+          <ID>Kuukaudennro</ID>
+          <Name>Kuukaudennro</Name>
+          <SourceColumnID>Kuukaudennro</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="701a3225-6a82-48f5-959d-8e349aa8c7e3">
+          <ID>Kuukausi</ID>
+          <Name>Kuukausi</Name>
+          <SourceColumnID>Kuukausi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1fad6a9d-e615-4d48-837e-ad45b2d644cc">
+          <ID>Louhinta Key</ID>
+          <Name>Louhinta Key</Name>
+          <SourceColumnID>Louhinta Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="abc18c02-ba08-4cb0-9ce5-eb00759d2bbc">
+          <ID>Loukkaant</ID>
+          <Name>Loukkaant</Name>
+          <SourceColumnID>Loukkaant</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="81630eaf-a7fa-4968-80e5-aaffad9ed086">
+          <ID>Nopeusrajoitus</ID>
+          <Name>Nopeusrajoitus</Name>
+          <SourceColumnID>Nopeusrajoitus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b927c622-16b1-446d-be0c-d697f9eafd9d">
+          <ID>Onnettomuusluokka</ID>
+          <Name>Onnettomuusluokka</Name>
+          <SourceColumnID>Onnettomuusluokka</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="485910f5-f749-47b8-a841-deca7f7284a7">
+          <ID>Päällyste</ID>
+          <Name>Päällyste</Name>
+          <SourceColumnID>Päällyste</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c7d67971-1736-4219-89a8-eb9528a5b01b">
+          <ID>Päällysteluokka</ID>
+          <Name>Päällysteluokka</Name>
+          <SourceColumnID>Päällysteluokka</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9a075664-916c-438a-ac4c-d030d05c6f97">
+          <ID>Sateen Intensiteetti</ID>
+          <Name>Sateen Intensiteetti</Name>
+          <SourceColumnID>Sateen Intensiteetti</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="15081362-5894-4b15-8c1c-5632710fa234">
+          <ID>Suhteellinen Kosteus</ID>
+          <Name>Suhteellinen Kosteus</Name>
+          <SourceColumnID>Suhteellinen Kosteus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d15db711-9161-4de3-b41e-6c4b0fff0185">
+          <ID>Taajama</ID>
+          <Name>Taajama</Name>
+          <SourceColumnID>Taajama</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3e4ba4b3-01e8-4707-83aa-b6e82b4b7e4b">
+          <ID>Time Stamp</ID>
+          <Name>Time Stamp</Name>
+          <SourceColumnID>Time Stamp</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="194313b2-3f4a-4d69-929a-2741c6c4e23c">
+          <ID>Valoisuus</ID>
+          <Name>Valoisuus</Name>
+          <SourceColumnID>Valoisuus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9478e8d4-fb80-413b-9432-9e46a19b2908">
+          <ID>Vastaantulevien Nopeusrajoitus</ID>
+          <Name>Vastaantulevien Nopeusrajoitus</Name>
+          <SourceColumnID>Vastaantulevien Nopeusrajoitus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f0ee21da-7dea-42dd-85e1-5bc199b6ea79">
+          <ID>Viikonpaiva</ID>
+          <Name>Viikonpaiva</Name>
+          <SourceColumnID>Viikonpaiva</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="c1b1cae2-e22c-4b5e-84a2-ec1404bb7813">
+      <ID>Naive Bayes</ID>
+      <Name>Naive Bayes</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="878d32d9-fe63-4a62-b58a-6ee6a91c9bc6">
+          <ID>Kaistatyyppi</ID>
+          <Name>Kaistatyyppi</Name>
+          <SourceColumnID>Kaistatyyppi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6c50eca8-4480-4404-9d87-bfa686851ed5">
+          <ID>Kunta</ID>
+          <Name>Kunta</Name>
+          <SourceColumnID>Kunta</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c8cf2e38-4282-4c30-9717-52006619850d">
+          <ID>Kuukausi</ID>
+          <Name>Kuukausi</Name>
+          <SourceColumnID>Kuukausi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="bf154109-cdc5-442d-889f-bf67ffd8c0d8">
+          <ID>Louhinta Key</ID>
+          <Name>Louhinta Key</Name>
+          <SourceColumnID>Louhinta Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="170a9819-360b-4205-b664-7abb17fa05f9">
+          <ID>Onnettomuusluokka</ID>
+          <Name>Onnettomuusluokka</Name>
+          <SourceColumnID>Onnettomuusluokka</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="338c4974-8a3f-47eb-922c-0ada544cc531">
+          <ID>Päällyste</ID>
+          <Name>Päällyste</Name>
+          <SourceColumnID>Päällyste</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e7ef2f15-2cb1-429a-bb0b-6471c05972f1">
+          <ID>Päällysteluokka</ID>
+          <Name>Päällysteluokka</Name>
+          <SourceColumnID>Päällysteluokka</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="86639756-7912-4f74-a83a-9e5a30181d16">
+          <ID>Taajama</ID>
+          <Name>Taajama</Name>
+          <SourceColumnID>Taajama</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a4cc49a6-79c7-40bf-9fcf-e20a9999714d">
+          <ID>Valoisuus</ID>
+          <Name>Valoisuus</Name>
+          <SourceColumnID>Valoisuus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3c8368a3-1787-435b-b028-499577f3b545">
+          <ID>Viikonpaiva</ID>
+          <Name>Viikonpaiva</Name>
+          <SourceColumnID>Viikonpaiva</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+  <ddl100_100:HoldoutMaxCases>1000</ddl100_100:HoldoutMaxCases>
+  <ddl100_100:HoldoutSeed>12</ddl100_100:HoldoutSeed>
+</MiningStructure>

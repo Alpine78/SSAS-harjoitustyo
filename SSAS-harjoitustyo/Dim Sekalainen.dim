@@ -1,0 +1,680 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ee6a1000-e29c-4def-b7f8-e640f7d1908b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Sekalainen</ID>
+  <Name>Dim Sekalainen</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ddc2f572-91b3-4d9a-892d-8a232331ff4e">
+    <DataSourceViewID>Tietovarastot DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="671bd14b-2835-42f8-99fb-0fb6d87886a5">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="57f4d8e6-57c5-43a1-96c5-d858c6985e1a">
+      <ID>Sekalainen Key</ID>
+      <Name>Sekalainen Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cab9b1ab-411f-46cd-9f60-a74425a4c7e0">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="293cc1ff-fdd8-4ecf-b232-9bf7c945e637">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>SekalainenKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2df75cb1-2897-42cc-af64-a1ccfc13d7c0">
+          <AttributeID>Tienpitsel</AttributeID>
+          <Name>Tienpitsel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5ea33636-197f-4f2a-8866-47d80e34da5d">
+          <AttributeID>Tie</AttributeID>
+          <Name>Tie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="24fb51bd-078f-433d-8ffb-f29470a2edb1">
+          <AttributeID>Piirinimi</AttributeID>
+          <Name>Piirinimi</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="167fa456-81d7-4cce-9af3-8ab7b8b88b29">
+          <AttributeID>Ontyypsel</AttributeID>
+          <Name>Ontyypsel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="91812df9-e20e-4c29-9689-d3b2e59e5b22">
+          <AttributeID>Onlksel</AttributeID>
+          <Name>Onlksel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="491be737-a6a7-4300-9b50-55fd9696c22d">
+          <AttributeID>Nopraj</AttributeID>
+          <Name>Nopraj</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c8ef6c85-2810-427c-96bc-b0903d14f638">
+          <AttributeID>Onnpaiksel</AttributeID>
+          <Name>Onnpaiksel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="99a460d2-8864-44a5-b560-9595b0e11e67">
+          <AttributeID>Liikvalsel</AttributeID>
+          <Name>Liikvalsel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d09e2b66-c197-48e4-9f22-3e68d0ac5d14">
+          <AttributeID>Noplajisel</AttributeID>
+          <Name>Noplajisel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b3de7ad4-873e-4947-8429-f473df91bf57">
+          <AttributeID>Nopsuunvas</AttributeID>
+          <Name>Nopsuunvas</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c7fc24b4-89dc-4b25-b005-40eabbe9ac4f">
+          <AttributeID>Nopsuunoik</AttributeID>
+          <Name>Nopsuunoik</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="108abee4-f957-4274-95de-084860a654b9">
+          <AttributeID>Taajama</AttributeID>
+          <Name>Taajama</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ab765388-a56e-48ab-b182-8f104bf4d9bf">
+          <AttributeID>Mo Molsel</AttributeID>
+          <Name>Mo Molsel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="46a723fd-4349-4b25-b944-5e03c3f0c511">
+          <AttributeID>Toimlksel</AttributeID>
+          <Name>Toimlksel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e60ff5d6-b5f5-42dd-b221-3d56b4b7b842">
+          <AttributeID>Tienlev</AttributeID>
+          <Name>Tienlev</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ca986f8a-8b8e-4d2f-8682-dd5e34126e31">
+          <AttributeID>Tietyö</AttributeID>
+          <Name>Tietyö</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fe362ffc-1549-42b6-82c2-2e4838582771">
+          <AttributeID>Päällsel</AttributeID>
+          <Name>Päällsel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1a73265c-d47b-4100-811c-ef6599aa5c23">
+          <AttributeID>Risteyssel</AttributeID>
+          <Name>Risteyssel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="95e65800-2f3c-4381-aa6f-e89fabe9b233">
+          <AttributeID>Rautatie</AttributeID>
+          <Name>Rautatie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b87ab55c-dac7-4189-827b-f3f8e9faf28b">
+          <AttributeID>Rautatsel</AttributeID>
+          <Name>Rautatsel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f5edf737-e239-4bff-b3e3-2e5a0b5687ae">
+          <AttributeID>Katuosoite</AttributeID>
+          <Name>Katuosoite</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f712e4ce-9402-4436-9347-7a58114213f2">
+          <AttributeID>Tietyypsel</AttributeID>
+          <Name>Tietyypsel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="22c9cf83-e2b5-411a-bc62-3f4502964292">
+          <AttributeID>Talvhoitsel</AttributeID>
+          <Name>Talvhoitsel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dfd112eb-3922-4e01-9927-6ae97ec5129d">
+          <AttributeID>Tienverkse</AttributeID>
+          <Name>Tienverkse</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="84100094-c326-4d11-8f38-c06533ab0c13">
+          <AttributeID>Lisäkaisse</AttributeID>
+          <Name>Lisäkaisse</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eb9fa514-e3de-4269-ae53-683b914d3d51">
+          <AttributeID>Solmutyyps</AttributeID>
+          <Name>Solmutyyps</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="464f77aa-8b56-45ad-a6a5-63df9149a8d6">
+          <AttributeID>Päällyslev</AttributeID>
+          <Name>Päällyslev</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c9d9b78d-3353-4726-9780-23aee5241017">
+          <AttributeID>Päällksel</AttributeID>
+          <Name>Päällksel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="87abfe70-8a17-44b3-bcc6-6f27f5431fb4">
+          <AttributeID>Elynimi</AttributeID>
+          <Name>Elynimi</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6d03afa7-a6ff-4288-85d2-47e6231da61d">
+      <ID>Tienpitsel</ID>
+      <Name>Tienpitsel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ef33573f-2525-4f4b-a809-a831a36c1aa5">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="33bef30b-4079-4926-ae38-bd17053c2973">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Tienpitsel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c2e5cb55-c053-4170-9cb8-3a2ed993c02f">
+      <ID>Tie</ID>
+      <Name>Tie</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33377272-4383-4493-a16b-dd88b0c16b47">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="501ab6fe-8ea1-4524-94ca-38566f9f265c">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Tie</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="98279262-7f46-4319-aacb-00b75d1babeb">
+      <ID>Piirinimi</ID>
+      <Name>Piirinimi</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="64b53b7d-eb76-48f0-8210-46a2c660865b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4f1900fb-be90-4335-b856-0559996df7fa">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Piirinimi</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="776707ff-b9e7-44b6-9bd6-b5e251eaaab3">
+      <ID>Ontyypsel</ID>
+      <Name>Ontyypsel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cd1f0c3e-5873-4f84-b3e1-ba4844e4145d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d87dfae3-36f4-446b-8eca-99d5fa2da504">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Ontyypsel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="94173c64-ed8d-429b-a947-dcaa8782403a">
+      <ID>Onlksel</ID>
+      <Name>Onlksel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4f7f7a73-cf21-4688-8946-2e71ba906077">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b5e24654-03fa-477b-95ed-00a911ec3b1f">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Onlksel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e0c8fd3d-f545-43a1-a813-468f0c6f06c1">
+      <ID>Nopraj</ID>
+      <Name>Nopraj</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c137a86-3260-44f3-a996-7068711714ff">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2830529b-7d47-4802-8d4b-948078b166d4">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Nopraj</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f0d3f1a7-651c-469d-aaa1-c3242cc77b22">
+      <ID>Onnpaiksel</ID>
+      <Name>Onnpaiksel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="14424111-cb1e-4af0-9807-5cba16baf9aa">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="207f6e05-7183-4d47-ad8e-13ea86694fbc">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Onnpaiksel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dc4f2167-c0c2-4176-87fa-4a9943dc8d92">
+      <ID>Liikvalsel</ID>
+      <Name>Liikvalsel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f1d17d53-201b-486a-a508-85082dc61b74">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ebac3416-ed29-426f-a3bc-54b3ef5c2c90">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Liikvalsel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3b6cb9ec-246f-44e6-a924-cddeb9e6ae14">
+      <ID>Noplajisel</ID>
+      <Name>Noplajisel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c602750d-cdec-4f26-8cb0-56c1a3e17c5b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f391544-633f-48ed-a55b-43ce52e8f9bf">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Noplajisel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a2f0a81a-dd18-4108-b6e4-db7847df6b6b">
+      <ID>Nopsuunvas</ID>
+      <Name>Nopsuunvas</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="733fe919-48cc-4324-a848-6222f4d54816">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62cef7f6-769b-4c26-9b59-e39c1f956986">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Nopsuunvas</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="23dc8a3e-7471-4601-8f96-b09396c0f270">
+      <ID>Nopsuunoik</ID>
+      <Name>Nopsuunoik</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f0f0e839-6a62-44b8-9404-a83958bac84a">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6492fc5-de61-43ae-b606-916d7b43ffbb">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Nopsuunoik</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a49c10de-a00a-4600-886e-486050631c18">
+      <ID>Taajama</ID>
+      <Name>Taajama</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d76f49b5-376e-4f54-a376-4634a71c7a08">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="929a34ba-b20c-4b2c-ba10-3bd25425adb0">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Taajama</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="48c44fe3-0242-4e0e-ab2f-1517f447dde9">
+      <ID>Mo Molsel</ID>
+      <Name>Mo Molsel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0a14f66a-5c8f-4c87-86a9-109d626f42ea">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ded1aeed-7773-47ae-9d1b-08046b3166da">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Mo_molsel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d46c2457-f199-41cf-b4d4-2ce0a3628955">
+      <ID>Toimlksel</ID>
+      <Name>Toimlksel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e316489b-1ed6-4eef-aa2a-f6ab24f5e70d">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="73aac052-eb76-472a-8724-0c5eddc64a44">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Toimlksel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bfee49a2-3cc5-4c47-b8a1-479ad15327b7">
+      <ID>Tienlev</ID>
+      <Name>Tienlev</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2c9fac0d-1b77-4b4e-a2f9-d13e70184ae9">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4cc75e4-fe4a-44ac-aae3-5497a6ebebd5">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Tienlev</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ee2888ec-1e35-49b6-9d1f-5c1593d9e2a1">
+      <ID>Tietyö</ID>
+      <Name>Tietyö</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c40b0208-9f6a-44e6-83d9-eb9204ebca3c">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0fea30d7-5287-4158-983f-243f1b7f1bc5">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Tietyö</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9292504e-bb6e-42b6-b7c9-54c881002da4">
+      <ID>Päällsel</ID>
+      <Name>Päällsel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="42f3a69d-3d58-4fe5-80a5-c977b6df77c0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6e795705-6597-411e-8afd-7e286799b27c">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Päällsel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2dcb3bd3-2581-4052-8657-29d0482cabd0">
+      <ID>Risteyssel</ID>
+      <Name>Risteyssel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="23623a59-4a25-4438-98ca-3a1472124cfa">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="258ea475-4a67-4f21-b380-01268e704239">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Risteyssel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7aaef7a2-b4f6-407b-b317-65d26168efca">
+      <ID>Rautatie</ID>
+      <Name>Rautatie</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1326aa6a-c712-4ff8-88a6-325d97ae0863">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="27015e53-10bf-470e-a67a-f8a1acec8694">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Rautatie</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f2d67742-34a2-434e-a7b5-1cd8d3bac171">
+      <ID>Rautatsel</ID>
+      <Name>Rautatsel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aab11970-39cf-408b-b8a2-a253814216b3">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db860d1e-5583-420b-b9b3-b74f595fdf19">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Rautatsel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="de969c1f-dfb0-4bb6-99f9-6517912af82e">
+      <ID>Katuosoite</ID>
+      <Name>Katuosoite</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4cddba18-4172-4842-af3f-d07b0b717d17">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f3257d97-6df5-4eda-9280-7afcd03b38e6">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Katuosoite</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7164c4b7-488b-4ee8-96f9-c77be2fc3c41">
+      <ID>Tietyypsel</ID>
+      <Name>Tietyypsel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a2f7f36a-7ae8-4629-bbd7-6db609af6b3a">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ddb04b8-c2e7-4943-8697-7324ccd8882b">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Tietyypsel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1d0e0183-e277-4b88-98e8-23f163d8e50f">
+      <ID>Talvhoitsel</ID>
+      <Name>Talvhoitsel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6588e15c-1c3e-4b0c-9442-393e6571a73a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="56e82f83-2f8a-4393-b84c-a2d8386ec410">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Talvhoitsel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b77ee32c-9fd8-4dbc-89f2-f6ee6a8c5a9a">
+      <ID>Tienverkse</ID>
+      <Name>Tienverkse</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8113a742-5f3b-4862-aefc-d97d855b102e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="262e1463-4326-47f3-afa8-839a8e5e5144">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Tienverkse</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0553a9e8-966b-4fae-b3dc-717b3ea665ab">
+      <ID>Lisäkaisse</ID>
+      <Name>Lisäkaisse</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ea170c38-6c66-4c33-b38a-8279f0cb45b6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="53848d45-614e-4a03-a117-f0f048b1cc24">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Lisäkaisse</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a0067901-7c86-4eea-b946-5bb61800020a">
+      <ID>Solmutyyps</ID>
+      <Name>Solmutyyps</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="420e469d-98fe-468e-9b87-4de6dae16bb4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7bd384f-9757-4d18-b496-6b61a75aba9f">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Solmutyyps</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f4d88cdf-0df0-42d4-a896-a4f2d8547954">
+      <ID>Päällyslev</ID>
+      <Name>Päällyslev</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fbaa2ee1-a9e5-4498-b005-a934f8c3fd88">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cbe3cbba-2f29-4f9f-bc70-6a3897b6e336">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Päällyslev</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="737b49de-02b5-4197-9e8d-e0fab6d0e2d9">
+      <ID>Päällksel</ID>
+      <Name>Päällksel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c2373904-0d1b-4d9e-b9a8-ff9d414c140c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="29bf904a-3bc7-40eb-874d-6b4d3d507037">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Päällksel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a04fb9e5-91ef-4925-91ab-9a1ab82a34f0">
+      <ID>Elynimi</ID>
+      <Name>Elynimi</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="27e9b237-4e1f-423a-862b-0937fa25679f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8996cf6-2fff-4c1f-b355-8310253c22c5">
+            <TableID>dbo_DimSekalainen</TableID>
+            <ColumnID>Elynimi</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

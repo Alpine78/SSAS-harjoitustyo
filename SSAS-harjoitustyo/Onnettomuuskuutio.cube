@@ -1,0 +1,392 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d40415dc-95f8-413f-b240-7b81d5778add" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Onnettomuuskuutio</ID>
+  <Name>Onnettomuuskuutio</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="2e1dde90-485f-4d10-8197-ea36329bc023">
+      <ID>Dim Kunta</ID>
+      <Name>Dim Kunta</Name>
+      <DimensionID>Dim Kunta</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3cc2b6b2-a571-4df0-9a9f-2e4305260ec4">
+          <AttributeID>Kunta Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="298cde1c-6070-42cd-a93a-307068d2a706">
+          <AttributeID>Maakuntsel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0f4794a3-0cf0-48ce-938b-c0392fd1a7f1">
+          <AttributeID>Kuntasel</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="4325dcc0-768d-4663-819c-789b095c2fab">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="8f12dcd3-a56b-4596-98ba-665f06a1c473">
+      <ID>Dim Pvm</ID>
+      <Name>Dim Pvm</Name>
+      <DimensionID>Dim Pvm</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4cf68877-6f0d-4e69-a3d6-267a3baa2e94">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2268cca0-92e8-416d-930a-0725eba55a54">
+          <AttributeID>Kuukaudennro</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="79740899-c609-4b69-8773-4721d144a584">
+          <AttributeID>Kuukausi</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="98ab204d-3add-4a36-b963-d353088d9ab5">
+          <AttributeID>Kuukaudenpv</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1a119f3a-0124-4feb-84d5-e9c3c3393c20">
+          <AttributeID>Viikonpaivanro</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="47c743ff-39ec-4090-b0a8-3ba7f95834ff">
+          <AttributeID>Viikonpaiva</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="8795f17f-9cf3-4531-9b6f-fdf4b41b186d">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="1c78deb3-e34c-4727-b27a-7e53a4b9a9d5">
+      <ID>Fact Weather</ID>
+      <Name>Fact Weather</Name>
+      <DimensionID>Fact Weather</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6255eca4-f212-401c-8fc7-e10c6fbb7db3">
+          <AttributeID>Weather Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b904fbf9-0d08-49eb-a92e-f558a1b25969">
+          <AttributeID>Onnett Id</AttributeID>
+          <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+        </Attribute>
+        <Attribute dwd:design-time-name="5aaa3f8e-7255-4b64-849c-8614d16974a1">
+          <AttributeID>Pilvien Maara</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="149d70f8-4765-401c-a81c-a3f394f292d2">
+          <AttributeID>Ilmanpaine</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7cd5f86c-74ff-4bb7-93a3-985188e07304">
+          <AttributeID>Suhteellinen Kosteus</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0cddbde0-68d1-4e8b-8152-a512d403a6c3">
+          <AttributeID>Sateen Intensiteetti</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4512deee-5950-4734-bf02-feabad5c5fb8">
+          <AttributeID>Lumensyvyys</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bc586d04-7de4-4460-90fa-71a1e8424cd5">
+          <AttributeID>Ilman Lampotila</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="20d3e813-2c77-4a2a-8f4e-d1cc1cd7bf1b">
+          <AttributeID>Kastepistelampotila</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a241891a-dfa8-4211-b4f2-ab7e6e312a51">
+          <AttributeID>Nakyvyys</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="37739287-94e4-4ab7-aba6-7bb49793bbc4">
+          <AttributeID>Tuulen Suunta</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f216b44d-84f8-4e32-8d44-f14fc9ebe27f">
+          <AttributeID>Puuskanopeus</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7eb53169-fa0d-41b7-ba33-e848daaf2fae">
+          <AttributeID>Tuulen Nopeus</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="562dd2b2-00b0-4ab2-a4ea-f258d9d9dfea">
+          <AttributeID>Pintasel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="89d12b7e-f59d-4920-bb92-b014b965fc96">
+          <AttributeID>Valsel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e2630822-c2a8-42c9-a6c6-f2fc3d69e7be">
+          <AttributeID>Saasel</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a43dc3bb-bafe-4700-8a46-25c84cd37272">
+      <ID>Dim Sekalainen</ID>
+      <Name>Dim Sekalainen</Name>
+      <DimensionID>Dim Sekalainen</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ba3f501f-8904-4b7e-8444-d32166dd52c7">
+          <AttributeID>Sekalainen Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e12caf5-0486-430a-a1a5-7f269c9945af">
+          <AttributeID>Tienpitsel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="92bb97d3-5d56-4a59-a140-cca601a42ab8">
+          <AttributeID>Tie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="97bfe4b5-166f-4395-bdfa-e25ab53ad2b9">
+          <AttributeID>Piirinimi</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7daff616-fc93-4ab8-8536-14a90c2ef979">
+          <AttributeID>Ontyypsel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f79e28a7-e55a-40d9-9808-ebf72d7a39ac">
+          <AttributeID>Onlksel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="32f40a0d-98ac-462c-84b2-290709343ac8">
+          <AttributeID>Nopraj</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="69e50991-42bc-4d38-81f7-47c7d1357b1b">
+          <AttributeID>Onnpaiksel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="46039310-30f1-408a-807a-b9936a776590">
+          <AttributeID>Liikvalsel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1cb164d-1b34-4245-8954-f99a4f2884be">
+          <AttributeID>Noplajisel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1eaaefbf-ca42-43cc-bf3a-2fe7799e3175">
+          <AttributeID>Nopsuunvas</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d220f2cc-a3e1-4402-9770-bf161eb8cb9a">
+          <AttributeID>Nopsuunoik</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e2f3437c-d1b5-475d-bce1-1ea7f1c4a8f6">
+          <AttributeID>Taajama</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ccaa7045-96d2-4653-9feb-48a84e0e65f8">
+          <AttributeID>Mo Molsel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1c552134-e838-464a-b996-1d521903e553">
+          <AttributeID>Toimlksel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="991da794-e6ec-4267-a180-44cf065c8161">
+          <AttributeID>Tienlev</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="86e2536d-e61b-4192-92c3-564e90e32fef">
+          <AttributeID>Tietyö</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a7347dfa-a91a-48f5-a407-bac8a1424127">
+          <AttributeID>Päällsel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a8277004-c773-4cb7-baec-d9e2911cc780">
+          <AttributeID>Risteyssel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2b2b3e63-1c1d-4e7c-83e7-35e53aaffc19">
+          <AttributeID>Rautatie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f4a6951d-2d08-4c6d-b4ad-951970e6c4cd">
+          <AttributeID>Rautatsel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="847c1e22-ccce-4aa9-afd2-2732557b5aa3">
+          <AttributeID>Katuosoite</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="63ee9b25-eb6b-4877-a701-baa7a1a27f11">
+          <AttributeID>Tietyypsel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6ca338d9-94de-4627-86e8-e0400df65a4b">
+          <AttributeID>Talvhoitsel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="91d4c592-61fb-4fa3-ab9b-0681fc7417d3">
+          <AttributeID>Tienverkse</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="faddc698-99b3-46a1-a87f-8dca11d7847a">
+          <AttributeID>Lisäkaisse</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9f2ea62d-41c4-40c6-9bb3-0500088c15e7">
+          <AttributeID>Solmutyyps</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b24fc02e-a04f-42f0-93dd-031dcef54abb">
+          <AttributeID>Päällyslev</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9aaca64c-670a-4548-8cb2-0bbff4d520d0">
+          <AttributeID>Päällksel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="89d6da8d-eda5-4198-8359-8736edf6f19f">
+          <AttributeID>Elynimi</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="76d39952-0af0-46c3-adbd-d32b0a092607">
+      <ID>Fact Onnettomuus</ID>
+      <Name>Fact Onnettomuus</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="f9aa94ad-a077-4506-8ec8-7108ccab8137">
+          <ID>Kuolleet</ID>
+          <Name>Kuolleet</Name>
+          <Source dwd:design-time-name="ec7f50a7-257b-4824-9212-be4089aa6f6a">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3e307e78-ba17-46b1-a590-5e107a8e4565">
+              <TableID>dbo_FactOnnettomuus</TableID>
+              <ColumnID>Kuolleet</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d89c6244-1b3f-442a-b248-7bc11d04fe50">
+          <ID>Loukkaant</ID>
+          <Name>Loukkaant</Name>
+          <Source dwd:design-time-name="92b15248-f12d-4811-aa40-0ec3c0b55ce3">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e7ce243a-023d-4008-9289-d10e7c3ad24d">
+              <TableID>dbo_FactOnnettomuus</TableID>
+              <ColumnID>Loukkaant</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8844afd1-0d9e-4c8a-83c3-901752dbc8fa">
+          <ID>Osallkm</ID>
+          <Name>Osallkm</Name>
+          <Source dwd:design-time-name="34834fb6-5aa0-400f-b438-90697d235070">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b45f9beb-8979-4900-8fe7-537d8600c782">
+              <TableID>dbo_FactOnnettomuus</TableID>
+              <ColumnID>Osallkm</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2cd1da06-656b-4c90-937d-9ce94d5270a2">
+          <ID>Fact Onnettomuus Count</ID>
+          <Name>Fact Onnettomuus Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c4310f47-333c-4767-915b-2ab7f915cf91">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="30675d66-64a6-429f-bc5a-ed3d357aab2c">
+              <TableID>dbo_FactOnnettomuus</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="014485af-0079-4ba6-bf25-a814bee32ce2">
+          <CubeDimensionID>Dim Kunta</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a36b9806-7767-46e0-a94b-2958d0fcec29">
+              <AttributeID>Kunta Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7f8255af-e576-4952-aacf-43eaf23855ef">
+                  <DataType>SmallInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="15da13a8-69a7-41c6-abfc-1dc43af56c2d">
+                    <TableID>dbo_FactOnnettomuus</TableID>
+                    <ColumnID>KuntaKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1ae90d8f-103e-4eb1-887f-e5ac702da4e2">
+          <CubeDimensionID>Dim Pvm</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d5b0876e-23ac-43ad-b4a7-fe469e920d7d">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d3a60dd8-2368-4a60-9bf0-0c510c65e7fd">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a4275791-8fa0-4c7b-a5d4-d11087e4fb4d">
+                    <TableID>dbo_FactOnnettomuus</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a54a6f3f-37e5-48e9-a3ae-427a6f9630c2">
+          <CubeDimensionID>Fact Weather</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="165f7f71-3421-4911-a44a-8e8216422cda">
+              <AttributeID>Weather Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b3cbf28c-db4f-4aad-b150-3b36a545e14e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="90e95642-380e-4b08-812a-d8cea987478d">
+                    <TableID>dbo_FactOnnettomuus</TableID>
+                    <ColumnID>WeatherKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="18dfef42-e931-4984-87bc-a7488cbbd3ad">
+          <CubeDimensionID>Dim Sekalainen</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="10bd3674-c8fe-440a-856f-764c91ad572d">
+              <AttributeID>Sekalainen Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="714fe81f-c325-434c-9c67-5299587e3e59">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3804de0c-7ccc-4fb3-8af2-dc70cc5fdafd">
+                    <TableID>dbo_FactOnnettomuus</TableID>
+                    <ColumnID>SekalainenKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="ea5b7380-e935-48ba-a4f5-33f61672acbe">
+    <DataSourceViewID>Tietovarastot DW</DataSourceViewID>
+  </Source>
+</Cube>
